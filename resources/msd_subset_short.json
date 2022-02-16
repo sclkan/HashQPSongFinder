@@ -1,0 +1,86 @@
+{ "songs" : [
+    {
+        "genre": "classic pop and rock",
+        "artist_name": "Blue Oyster Cult",
+        "title": "Mes Dames Sarat",
+        "duration": "246.33424",
+        "song_id": "000001"
+    },
+    {
+        "genre": "classic pop and rock",
+        "artist_name": "Blue Oyster Cult",
+        "title": "I Love The Night",
+        "duration": "269.29587",
+        "song_id": "000024"
+    },
+    {
+        "genre": "classic pop and rock",
+        "artist_name": "Blue Oyster Cult",
+        "title": "I Love The Night",
+        "duration": "267.49342",
+        "song_id": "000026"
+    },
+    {
+        "genre": "classic pop and rock",
+        "artist_name": "Derek & The Dominos",
+        "title": "Blues Power",
+        "duration": "634.20036",
+        "song_id": "004661"
+    },
+    {
+        "genre": "classic pop and rock",
+        "artist_name": "Derek & The Dominos",
+        "title": "Bell Bottom Blues",
+        "duration": "304.40444",
+        "song_id": "004662"
+    },
+    {
+        "genre": "classic pop and rock",
+        "artist_name": "Derek & The Dominos",
+        "title": "Blues Power",
+        "duration": "630.96118",
+        "song_id": "004688"
+    },
+    {
+        "genre": "classic pop and rock",
+        "artist_name": "Sonny & Cher",
+        "title": "I Got You Babe",
+        "duration": "275.51302",
+        "song_id": "018819"
+    },
+    {
+        "genre": "classic pop and rock",
+        "artist_name": "Sonny & Cher",
+        "title": "Crystal Clear / Muddy Waters",
+        "duration": "158.1971",
+        "song_id": "018820"
+    },
+    {
+        "genre": "classic pop and rock",
+        "artist_name": "Sonny & Cher",
+        "title": "I Got You Babe",
+        "duration": "190.37995",
+        "song_id": "018821"
+    },
+    {
+        "genre": "classic pop and rock",
+        "artist_name": "Sonny & Cher",
+        "title": "I Got You Babe",
+        "duration": "192.26077",
+        "song_id": "018825"
+    },
+    {
+        "genre": "jazz and blues",
+        "artist_name": "John Stevens",
+        "title": "This Love (Album Version)",
+        "duration": "248.89424",
+        "song_id": "048947"
+    },
+    {
+        "genre": "jazz and blues",
+        "artist_name": "John Stevens",
+        "title": "Don't Get Around Much Anymore (Album Version)",
+        "duration": "151.19628",
+        "song_id": "048948"
+    }
+]}
