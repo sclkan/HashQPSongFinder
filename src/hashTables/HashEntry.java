@@ -1,4 +1,4 @@
-package week07_part02;
+package hashTables;
 
 
 // HashEntry class for use by FHhashQP -----------------------
