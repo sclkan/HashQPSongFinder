@@ -1,18 +1,42 @@
 package hashTables;
+
 import java.util.NoSuchElementException;
+
+/**
+ * An extension of FHhashQP that can find an object based on key-value
+ * @author Sean Kan
+ *
+ * @param <KeyType>  Key value
+ * @param <E>  Generic  object
+ */
 public class FHhashQPwFind<KeyType, E extends Comparable<KeyType>> extends FHhashQP<E>
 {
+    /**
+     * Constructor with one parameter
+     * @param tableSize  Table size
+     */
     public FHhashQPwFind(int tableSize)
     {
         super(tableSize);
     }
+
+    /**
+     * Finds and returns an object based on key
+     * @param key Key
+     * @return  The found object or an exception
+     */
     public E find(KeyType key)
     {
         if (mArray[findPosKey(key)].state != ACTIVE)
             throw new NoSuchElementException();
         return mArray[findPosKey(key)].data;
-
     }
+
+    /**
+     * Determines the hash value for the key passed
+     * @param key  Key
+     * @return  The hash value
+     */
     protected int myHashKey(KeyType key)
     {
         int hashVal;
@@ -21,6 +45,12 @@ public class FHhashQPwFind<KeyType, E extends Comparable<KeyType>> extends FHhas
             hashVal += mTableSize;
         return hashVal;
     }
+
+    /**
+     * Finds the index location of an object based on key value
+     * @param key  Key
+     * @return  The index location
+     */
     protected int findPosKey(KeyType key)
     {
         int kthOddNum = 1;
