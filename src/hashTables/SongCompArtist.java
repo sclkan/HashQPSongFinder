@@ -4,7 +4,7 @@ import cs1c.SongEntry;
 import java.util.ArrayList;
 
 /**
- *Wrapper class that gives us the ability to compare songs based on their artists
+ * A wrapper class that gives us the ability to compare songs based on their artists
  * @author Sean Kan
  */
 public class SongCompArtist implements Comparable<String>

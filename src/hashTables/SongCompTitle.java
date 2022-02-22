@@ -3,7 +3,7 @@ package hashTables;
 import cs1c.SongEntry;
 
 /**
- * Wrapper class that gives us the ability to compare song titles
+ * A wrapper class that gives us the ability to compare song titles
  * @author Sean Kan
  */
 public class SongCompTitle implements Comparable<String>
