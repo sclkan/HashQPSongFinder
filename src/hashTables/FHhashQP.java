@@ -1,6 +1,9 @@
-package week07_part02;
+package hashTables;
 
-
+/**
+ * A class with hash function that incorporates quadratic probing
+ * @param <E>  Generic object
+ */
 // FHhashQP class --------------------------------------------
 public class FHhashQP<E>
 {
@@ -10,17 +13,24 @@ public class FHhashQP<E>
    
    static final int INIT_TABLE_SIZE = 7;
    static final double INIT_MAX_LAMBDA = 0.49;
-   
+
    protected HashEntry<E>[] mArray;
    protected int mSize;
    protected int mLoadSize;
    protected int mTableSize;
    protected double mMaxLambda;
-   
+   protected int countOfProbes;
+
    // public methods ---------------------------------
+
+   /**
+    * Constructor that takes table size as parameter
+    * @param tableSize  Table Size
+    */
    public FHhashQP(int tableSize)
    {
       mLoadSize = mSize = 0;
+      countOfProbes = 0;
       if (tableSize < INIT_TABLE_SIZE)
          mTableSize = INIT_TABLE_SIZE;
       else
@@ -30,11 +40,19 @@ public class FHhashQP<E>
       mMaxLambda = INIT_MAX_LAMBDA;
    }
 
+   /**
+    * Default constructor with no parameter
+    */
    public FHhashQP()
    {
       this(INIT_TABLE_SIZE);
    }
-   
+
+   /**
+    * Inserts object
+    * @param x   Generic object (SongEntry object for this particular use case)
+    * @return   True if object has been successfully added
+    */
    public boolean insert( E x)
    {
       int bucket = findPos(x);
@@ -52,7 +70,12 @@ public class FHhashQP<E>
 
       return true;
    }
-   
+
+   /**
+    * Removes object
+    * @param x  Generic object (SongEntry object for this particular use case)
+    * @return   True if object has been successfully removed
+    */
    public boolean remove( E x )
    {
       int bucket = findPos(x);
@@ -64,14 +87,29 @@ public class FHhashQP<E>
       mSize--; // mLoadSize not dec'd because it counts any non-EMP location
       return true;
    }
-   
+
+   /**
+    * Checks whether whether an object is present
+    * @param x   Generic object (SongEntry object for this particular use case)
+    * @return   True if the object is in the table
+    */
    public boolean contains(E x ) 
    {
       return mArray[findPos(x)].state == ACTIVE;
    }
-   
-   public int size()  { return mSize; }
-   
+
+   /**
+    * Returns the number of objects in a table
+    * @return The number of objects
+    */
+   public int size()
+   {
+      return mSize;
+   }
+
+   /**
+    * Empties the array
+    */
    void makeEmpty()
    {
       int k, size = mArray.length;
@@ -80,7 +118,12 @@ public class FHhashQP<E>
          mArray[k].state = EMPTY;
       mSize = mLoadSize = 0;
    }
-   
+
+   /**
+    * Sets a new max load factor
+    * @param lam   Load factor
+    * @return  True if the new factor has been set successfully
+    */
    public boolean setMaxLambda( double lam )
    {
       if (lam < .1 || lam > INIT_MAX_LAMBDA )
@@ -88,9 +131,22 @@ public class FHhashQP<E>
       mMaxLambda = lam;
       return true;
    }
-   
+
+   /**
+    * Counts number of times the table probes for a new position
+    * @return  The number of times the table probes for a new position
+    */
+   public int getCountOfProbes()
+   {
+      return countOfProbes;
+   }
    // protected methods of class ----------------------
-   
+
+   /**
+    * Finds position of an object
+    * @param x  Generic object (SongEntry object for this particular use case)
+    * @return   The index of the object
+    */
    int findPos( E x )
    {
       int kthOddNum = 1;
@@ -103,10 +159,14 @@ public class FHhashQP<E>
          kthOddNum += 2;     // compute next odd #
          if ( index >= mTableSize )
             index -= mTableSize;
+         countOfProbes++;
       }
       return index;
    }
-   
+
+   /**
+    * Rehashes and copies data from the old table
+    */
    protected void rehash()
    {
       // we save old list and size then we can reallocate freely
@@ -124,7 +184,12 @@ public class FHhashQP<E>
          if (oldArray[k].state == ACTIVE)
             insert( oldArray[k].data );
    }
-   
+
+   /**
+    * Hashes a given object
+    * @param x  Generic object (SongEntry object for this particular use case)
+    * @return  The hash value
+    */
    protected int myHash(E x)
    {
       int hashVal;
@@ -135,7 +200,12 @@ public class FHhashQP<E>
 
       return hashVal;
    }
-   
+
+   /**
+    * Finds the next prime number
+    * @param n  An integer like the size of a table
+    * @return  The next prime number
+    */
    protected static int nextPrime(int n)
    {
       int k, candidate, loopLim;
@@ -167,7 +237,10 @@ public class FHhashQP<E>
             return candidate;
       }
    }
-   
+
+   /**
+    * Builds an array based on the current value of mTableSize
+    */
    void allocateArray()
    {
       int k;
