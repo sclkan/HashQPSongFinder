@@ -14,20 +14,14 @@ import cs1c.SongEntry;
  * Specifically checks for implementation of find() function to return an object 
  * associated with a given key input.
  *
- * @author Foothill College, [YOUR NAME HERE]
+ * @author Foothill College, Sean Kan
  */
 public class MyTunes 
 {
 	public static final boolean SHOW_DETAILS = false;
 
-	// TODO: Create the class FHhashQPwFind to extend class FHhashQP 
-
-	// TODO: Define the wrapper class SongCompTitle for SongEntry objects,
-	//       which would compare SongEntry objects based on the song's String title field.
 	private FHhashQPwFind<String, SongCompTitle>  tableOfSongTitles;
 
-	// TODO: Define the wrapper class SongCompArtist for SongEntry objects,
-	//       which would compare SongEntry objects based on the song's String artist field.
 	private FHhashQPwFind<String, SongCompArtist> tableOfArtists;
 
 	// List of artists found while populating tableOfArtist field
@@ -42,19 +36,12 @@ public class MyTunes
 	 */
 	public MyTunes(SongEntry[] allSongs, int tableSize)
 	{		
-		// TODO: Define the TableGenerator class to have two class fields of type
-		//       FHhashQPwFind which extend the parent class FHhashQP.
 		TableGenerator g = new TableGenerator(tableSize);
 
-		// TODO: Populates a hash table for comparing songs based on their String field title.
-		//       Uses this table to keep track of a song.
 		tableOfSongTitles = g.populateTitleTable(allSongs);
 
-		// TODO: Populates a hash table for comparing songs based on their String field artist.
-		//       Create a list of unique keys found.
-		tableOfArtists = g.populateArtistTable(allSongs);		
+		tableOfArtists = g.populateArtistTable(allSongs);
 
-		// TODO: Return the list of keys found when populating hash able of artist names.
 		artists = g.getArtists();
 	}
 
@@ -192,13 +179,13 @@ public class MyTunes
 	 * a JSON input file and stores all entries in an array of SongEntry objects.
 	 * Populates two hash tables where each table uses different attributes of SongEntry 
 	 * class as the key. Tests finding keys in each hash table and reports whether a
-	 * requested key is found.
+	 * requested key is found.f
 	 */
 	public static void main(String[] args) 
 	{
 		// Directory path for JSON files
-		final String DATAFILE = "resources/msd_subset_short.json";		
-		//final String DATAFILE = "resources/music_genre_subset.json";	
+		final String DATAFILE = "resources/msd_subset_short.json";
+		//final String DATAFILE = "resources/music_genre_subset.json";
 		
 		// Note: This is similar to your prior projects.
 		//		 Placed in a separate method for readability.
@@ -214,13 +201,17 @@ public class MyTunes
 		// Note: Include your own test file in addition to the provided example test 
 		//       file based on the song title.
 		String requestedTitles = "resources/findTitles.txt";
+		//String requestedTitles = "resources/findTitles_additional_test.txt";
+
 		tunesStore.testTitleTable(requestedTitles);
 
 		// Tests FHhashQPwFind and SongCompArtist
 		// Note: Include your own test file in addition to the provided example test 
 		//       file based on the artist name.
-		String requestedArtists = "resources/findArtists.txt";	
-		tunesStore.testArtistTable(requestedArtists); 
+		String requestedArtists = "resources/findArtists.txt";
+		//String requestedArtists = "resources/findArtists_additional_test.txt";
+
+		tunesStore.testArtistTable(requestedArtists);
 
 		// flush the error stream
 		System.err.flush();
