@@ -42,10 +42,20 @@ src/hashTables/TableGenerator.java
     - Prints out statistics such as the # of quadratic probes performed and the # of songs attempted to be inserted
 
 resources/findArtists.txt
-    - Contains a list of artists that tests FHhashQPwFind and SongCompArtist
+    - Provided file that contains a list of artists that tests FHhashQPwFind and SongCompArtist
+
+resources/findArtists_additional_test.txt
+    - Additional test for music_genre_subset.json
+    - Can be used to test for entries with featuring artists
+    - Includes entries with incorrect capitalization, misspelling, and featuring artists without own solos
 
 resources/findTitles.txt
-    - Contains a list of songs that tests FHhashQPwFind and SongCompTitle
+    - Provided file that contains a list of songs that tests FHhashQPwFind and SongCompTitle
+
+resources/findTitles_additional_test.txt
+    - Additional test for music_genre_subset.json
+    - Can be used to test for songs with long titles and titles with numbers
+    - Includes bad entries that have the artist name as titles and incomplete titles
 
 resources/msd_subset_short.json
     - JSON file that contains song info like genre, title, artist, duration, and id (abbreviated version)
