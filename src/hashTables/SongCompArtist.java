@@ -73,7 +73,7 @@ public class SongCompArtist implements Comparable<String>
     @Override
     public String toString()
     {
-        return  artist + " size\t"
+        return  "\t\t" + artist + " size\t"
             + songs.size();
     }
 
