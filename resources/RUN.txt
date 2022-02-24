@@ -1,3 +1,3724 @@
-// TODO: For every project run your program.
-//       Then copy and paste the output in a file titled RUN under resources folder. 
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/findArtists.txt
+Test file: resources/findTitles.txt
+Test file: msd_subset_short.json
 
+NOTES:  Testing msd_subset_short.json with provided files
+-----------------------------------------------------
+Total number of songs read 12
+Testing with requested table size 10
+
+Populating hash table of song titles...
+Number of songs attempted to insert: 12
+Number of quadratic probes perform: 22
+Final table size for the hash table of song titles: 47
+
+Populating hash table of artists...
+Number of songs attempted to insert: 12
+Number of quadratic probes perform: 0
+Final table size for the hash table of artist names: 11
+
+
+Test file for hash table of song titles: resources/findTitles.txt
+Requested song title "Blues Power" found
+Requested song title "I Got You Babe" found
+Requested song title "This Love (Album Version)" found
+Requested song title "Foothill College" NOT found
+Requested song title "True Confessions" NOT found
+Requested song title "Broken Bridges" NOT found
+Requested song title "The Parting Glass" NOT found
+Requested song title "The Way Of Love" NOT found
+Requested song title "Wonderwall" NOT found
+Requested song title "How Will I Know" NOT found
+Done with testing table of song titles.
+
+
+Test file for hash table of artists names: resources/findArtists.txt
+
+Number of store songs given an artist:
+		Blue Oyster Cult size	3
+		Derek & The Dominos size	3
+		Sonny & Cher size	4
+		John Stevens size	2
+Requested artist name "Blue Oyster Cult" found
+Requested artist name "Derek & The Dominos" found
+Requested artist name "Sonny & Cher" found
+Requested artist name "Acid Kings" not found
+Requested artist name "Anne Murray" not found
+Requested artist name "Big Bopper" not found
+Requested artist name "Bita" not found
+Requested artist name "Captain Beefheart" not found
+Requested artist name "Cher" not found
+Requested artist name "Country Joe & The Fish" not found
+Requested artist name "Bob Verheecke" not found
+Requested artist name "Derek & The Dominos" found
+Requested artist name "Flash And The Pan" not found
+Requested artist name "John Stevens" found
+Requested artist name "Foothill College" not found
+Done with testing table of artists.
+
+Done with MyTunes.
+
+Process finished with exit code 0
+
+-----------------------------------------------------
+-----------------------------------------------------
+Test file: resources/findArtists_additional_test.txt
+Test file: resources/findTitles_additional_test.txt
+Test file: music_genre_subset.json
+
+NOTES:  Additional test for music_genre_subset.json
+Including songs with long titles, and bad entries with incorrect capitalization, misspelling, etc
+-----------------------------------------------------
+Total number of songs read 59600
+Testing with requested table size 10
+
+Populating hash table of song titles...
+Number of songs attempted to insert: 59600
+Number of quadratic probes perform: 120101
+Final table size for the hash table of song titles: 205759
+
+Populating hash table of artists...
+Number of songs attempted to insert: 59600
+Number of quadratic probes perform: 3403
+Final table size for the hash table of artist names: 12853
+
+
+Test file for hash table of song titles: resources/findTitles_additional_test.txt
+Requested song title "Etudes symphoniques [Symphonic Studies] Op.13 : XVI Etude 10 Variation 8" found
+Requested song title "Concerto for Oboe_ Bassoon_ Strings and Continuo: 3. Allegro molto" found
+Requested song title "Ballad Of Paladin (From \"Have Gun_ Will Travel\") (2002 Digital Remaster)" NOT found
+Requested song title "# 4/10" found
+Requested song title "Blue Oyster Cult" NOT found
+Requested song title "Macy Gray" NOT found
+Requested song title "Jay-Z" NOT found
+Requested song title "Don't Get Around Much Anymore" found
+Requested song title "Don't Fear The Reaper" found
+Requested song title "Theme From" NOT found
+Done with testing table of song titles.
+
+
+Test file for hash table of artists names: resources/findArtists_additional_test.txt
+
+Number of store songs given an artist:
+		Blue Oyster Cult size	104
+		The Rags size	1
+		Tone-Loc size	25
+		Tone Loc size	1
+		Various Artists - Delicious Vinyl size	1
+		Meic Stevens size	21
+		American Hi-Fi size	52
+		Lady Bug Transistor size	26
+		The Ladybug Transistor size	16
+		Deerhoof size	106
+		Theo Eastwind size	1
+		Dennis Edwards / Siedah Garrett size	2
+		DENNIS EDWARDS FEAT. THE WEATHER GIRLS size	1
+		Lee Greenwood size	36
+		Lee Greenwood / Barbara Mandrell size	1
+		Team Smith Show size	1
+		Sara Bareilles size	26
+		The Sea and Cake size	1
+		Simon Joyner size	1
+		The OJays size	7
+		The O'Jays size	33
+		Modern Eon size	1
+		The Pioneers size	44
+		Pioneers size	4
+		Land Of Talk size	17
+		Bill Medley & Jennifer Warnes size	5
+		Brook Benton; Orchestra under the direction of Quincy Jones size	1
+		Brook Benton size	43
+		DeBarge size	7
+		De Barge size	2
+		B.A.D. size	45
+		Big Audio Dynamite size	47
+		The Pointer Sisters size	87
+		Carlos Baute size	1
+		Essie Jain size	30
+		The Mindbenders size	6
+		Imagination size	50
+		Imagination Featuring Leee John size	6
+		Miracle Fortress size	14
+		Chris Squire size	18
+		Chris Squire / Billy Sherwood size	1
+		Chris Squire & Billy Sherwood of Yes size	1
+		Heatwave size	47
+		Heat Wave size	1
+		Burning Spear size	94
+		Crosby_ Stills_ Nash & Young size	28
+		Crosby_ Stills & Nash size	81
+		Crosby_ Stills_ Nash and Young size	24
+		Crosby_ Stills & Nash & Young size	1
+		Frankie Valli size	56
+		Frankie Valli / John Travolta / Olivia Newton-John size	1
+		Frankie Valli / Gary Brown size	1
+		Frankie Valli / The Jersey Boys size	1
+		Frankie Valli & The 4 Seasons size	6
+		Carly Simon size	154
+		Carly Simon;James Taylor size	1
+		Emil SjÌ_gren size	1
+		Carly Simon & Megan Mullally size	1
+		The Tymes size	45
+		George Williams size	1
+		The Seeds size	44
+		Scars size	3
+		Clifford T. Ward size	43
+		Clifford T Ward size	5
+		Skeletal Family size	14
+		The Dukes Of Stratosphear size	16
+		Randy Travis size	128
+		Randy Travis with Tammy Wynette size	1
+		Randy Travis with B.B. King size	1
+		Martha And The Muffins size	22
+		The Pale Fountains size	27
+		Julie Driscoll_ Brian Auger & The Trinity size	25
+		Lighthouse Family size	47
+		Jeannie C. Riley size	45
+		Jeanie C. Riley size	1
+		Jeannie C Riely size	1
+		Jacob Miller and Inner Circle size	14
+		The Box Tops size	80
+		Wallis Bird size	34
+		Lowell Fulson size	96
+		Baltimora size	9
+		Green On Red size	19
+		Cheap Trick size	114
+		Cheap Trick;Billy Corgan size	1
+		Linda Ronstadt featuring Aaron Neville size	1
+		Marshall Hain size	1
+		Arthur Conley size	39
+		Tuxedomoon size	13
+		Santa Esmeralda size	41
+		Santa Esmeralda feat. Leroy Gomez size	1
+		Arms size	2
+		Isobel Campbell & Mark Lanegan size	9
+		Isobel Campbell / Mark Lanegan size	22
+		Country Joe & The Fish size	30
+		Visage size	45
+		Rush size	1
+		Jack Kerouac Featuring Al Cohn & Zoot Sims size	6
+		Jack Kerouac size	15
+		Eight Legs size	13
+		Deniece Williams size	37
+		Cause Co-Motion! size	19
+		Jape size	30
+		The Ruby Suns feat. The Penan tribe size	1
+		The Ruby Suns size	32
+		Ruby Suns size	1
+		The Railway Children size	33
+		Pigbag size	3
+		Ides Of March size	15
+		The Ides Of March size	12
+		World Stage size	1
+		The Maple State size	9
+		Nick Straker size	24
+		Milli Vanilli size	18
+		Harry J Allstars size	32
+		Richard Ace / Harry J Allstars size	1
+		James Reeves size	1
+		Jim Reeves size	137
+		England Dan & John Ford Coley size	43
+		Blurt size	50
+		The Jealous Girlfriends size	1
+		Mick Hucknall size	2
+		Hucknall size	2
+		Belinda Carlisle size	49
+		Soulsister size	37
+		Slapp Happy size	41
+		Jon Secada size	74
+		Dave Thompson size	3
+		J.J. Cale size	79
+		J.J. Cale & Eric Clapton size	8
+		J. J. Cale & Eric Clapton size	1
+		Norman Greenbaum size	2
+		Tom Petty And The Heartbreakers / Stevie Nicks size	3
+		Tom Petty And The Heartbreakers size	3
+		Tom Petty size	43
+		Stevie Wonder size	2
+		Jean Knight size	32
+		Tommy Gutless size	1
+		The Loose Salute size	13
+		Colbie Caillat size	42
+		Colbie Caillat / Jason Reeves size	1
+		Colbie Caillat / Juanes size	1
+		David Byrne & Brian Eno size	5
+		Brian Eno And David Byrne size	5
+		Howling Bells size	31
+		The Week That Was size	8
+		Belbury Poly size	40
+		The Stooges size	90
+		Iggy And The Stooges size	13
+		Iggy & The Stooges size	3
+		Iggy Pop_ The Stooges size	1
+		Marcel Lallemang size	1
+		Cyndi Lauper size	98
+		Cyndi Lauper with Ani DiFranco & Vivian Green size	1
+		Cyndi Lauper with Jeff Beck size	1
+		Cindy Lauper size	1
+		Dead Or Alive;Cyndi Lauper size	1
+		The Nashville Teens size	19
+		The Nashville Teens / Jerry Lee Lewis size	1
+		Johnny Tillotson size	46
+		Sarah Brightman / Steve Harley size	1
+		Will Downing size	29
+		Will Downing / Phil Perry size	1
+		Will Downing / Lee Ritenour size	1
+		The Style Council size	89
+		The Style Council / Noel McCalla size	1
+		The Style Council / Dee C. Lee size	2
+		Reinhard Mey size	1
+		Graham Parker & The Rumour size	23
+		Graham Parker size	1
+		Mr Mister size	1
+		Mr. Mister size	28
+		Nancy Sinatra size	53
+		Nancy Sinatra Featuring Hal Blaine size	1
+		Nancy Sinatra Featuring Ry Cooder size	1
+		Gary Moore / Phil Lynott size	1
+		Matt Monro size	51
+		Matt Munro size	2
+		Dido size	66
+		Aoo&ooA size	1
+		Wayne Fontana / The Mindbenders size	11
+		Incognito size	102
+		Bozzi Records size	1
+		Incognito feat. Linda Lee Hopkins size	1
+		Incognito / Jocelyn Brown size	1
+		Sniff 'n' The Tears size	39
+		Lonnie Gordon size	22
+		Sambassadeur size	24
+		The Matthew Herbert Big Band size	10
+		Fun-Da-Mental size	1
+		Fun 'Da' Mental size	49
+		FUNDAMENTAL size	2
+		The Big Bopper size	19
+		Big Bopper size	20
+		Big Bopper_ The size	9
+		Big Bopper (As Jape Richardson & The Japetts) size	3
+		Lords Of The New Church size	26
+		Attic Lights size	31
+		Pernice Brothers size	31
+		The Trammps size	48
+		The Tramps size	2
+		The Pipettes size	20
+		Dale Hawkins size	37
+		David Crosby & Stephen Stills size	1
+		Stephen Stills size	4
+		David Crosby_ Neil Young & Graham Nash size	1
+		David Crosby size	46
+		Graham Nash size	71
+		Working Week size	26
+		Derek & The Dominos size	31
+		Derek & The Dominos / Eric Clapton size	1
+		Dirty Mojo size	1
+		Bydeathsdesign size	1
+		Witchfynde size	10
+		R. Dean Taylor size	25
+		The Archies size	35
+		Ben E. King size	127
+		Payaso size	1
+		Ev size	1
+		The Spinners size	1
+		Third World size	51
+		The Upsetters size	38
+		The Upsetters / Tommy McCook size	1
+		The Upsetters / Winston Wright size	1
+		The Upsetters / U-Roy size	1
+		The Upsetter size	4
+		Olavi Virta size	1
+		Neutral Milk Hotel size	27
+		The Winter Blanket size	1
+		Was (Not Was) size	30
+		Jocelyn Brown size	28
+		Jocelyn Brown & Oliver Cheatham size	1
+		LeAnn Rimes size	23
+		Leann Rimes & Brian McFadden size	1
+		Traveling Wilburys size	23
+		Ian McCulloch size	47
+		The Pasadenas size	40
+		Lisa Loeb size	59
+		Lisa Loeb & Nine Stories size	4
+		Voice Of The Seven Woods size	13
+		Radio Luxembourg size	4
+		Barbra Streisand & Barry Gibb size	2
+		Husker Du size	50
+		frYars size	12
+		Lisa Gerrard & Patrick Cassidy size	2
+		Lisa Gerrard size	16
+		Lisa Gerrard / Gavin Greenaway / The Lyndhurst Orchestra / Bruce Fowler / Yvonne S. Moriarty / Walt Fowler / Ladd McIntosh / Elizabeth Finch / Jack Smalley / Hans Zimmer size	2
+		Lisa Gerrard_Patrick Cassidy size	9
+		Lisa Gerrard;Pieter Bourke size	10
+		Bodytalkers size	1
+		Crosby & Nash size	42
+		Crosby / Nash size	6
+		Amy Studt size	37
+		Zombies size	10
+		The Zombies size	104
+		Steppenwolf size	58
+		Steppenwolf / John Kay size	3
+		John Kay size	3
+		Tom Jones and Mousse T. size	1
+		Tom Jones / Mousse T. size	2
+		Robert Forster size	41
+		Foyer Des Arts size	1
+		Diblo Dibala size	4
+		The Sonics size	49
+		The Sonics_ Charlie & The Tunas size	9
+		Frank Wilson size	5
+		Fractured size	13
+		Alison Moyet size	51
+		Nik Kershaw size	48
+		temposhark size	47
+		Philipi Rosa size	1
+		Temposhark feat. Princess Julia size	1
+		Carter USM size	84
+		Fashion Victim size	1
+		Carter The Unstoppable Sex Machine size	14
+		Sound Effects size	1
+		Grace Jones size	93
+		1000names size	1
+		Grace Jones & Bounty Killer size	6
+		First Choice size	81
+		Luke Dubyah & PointA feat. J.O.T. size	1
+		Felix Baumgartner & DSS size	1
+		Damon Vallero size	1
+		Wesley Blake size	1
+		WJ Plecha size	1
+		Crazy X-Ray Feat. Mirko S. size	1
+		Blind Melon size	69
+		Jack Bruce size	62
+		Michael Mantler size	1
+		Jack Bruce and Robin Trower size	2
+		Jack Bruce / Robin Trower size	1
+		Jack Bruce / David Liebman / Trilok Gurtu / Mark Nauseef size	1
+		Jack Bruce / Bernie Worrell size	1
+		Jack Bruce / Clem Clempson / Ginger Baker size	1
+		Jack Bruce / Eric Clapton / Peter Weihe / Stuart Elliot size	1
+		Alannah Myles size	49
+		The Icicle Works size	36
+		Boney M. 2000 size	1
+		Boney M. size	95
+		Boney M. feat. Daddy Cool Kids size	1
+		Boney M size	1
+		Boney MåÊåÊåÊåÊåÊåÊåÊåÊåÊåÊåÊåÊåÊåÊåÊåÊåÊåÊåÊåÊåÊåÊåÊåÊåÊåÊåÊåÊåÊ åÊåÊåÊåÊ size	1
+		The Weather Girls size	41
+		Weather Girls size	5
+		Earl King size	41
+		The Manhattans size	58
+		The Manhattans feat. Gerald Alston & Blue Lovett w/ Screechy Dan size	2
+		The Manhattans feat. Gerald Alston & Blue Lovett size	4
+		Manhattans size	1
+		Red House Painters size	42
+		Hector Delfosse size	1
+		John Foxx size	48
+		Eple Trio size	1
+		John Foxx & Harold Budd size	1
+		Neil Sedaka size	99
+		Karaoke - Ameritz size	1
+		Neil Sedaka (Karaoke) size	1
+		Neil Sadaka size	1
+		The Wave Pictures size	30
+		Antonio Breschi size	1
+		The Standells size	1
+		Paul McCartney / Wings size	8
+		Wings size	1
+		Paul McCartney And Wings size	5
+		Wings_ Paul McCartney size	1
+		Paul McCartney_ Wings size	1
+		Sounds Orchestral size	1
+		Andy Gibb size	1
+		Hope Of The States size	41
+		Southside Johnny & The Asbury Jukes size	25
+		Deep Blue Something size	12
+		Albert Hammond Jr. size	12
+		Albert Hammond Jr size	14
+		Fontella Bass size	42
+		Simply Red size	90
+		Herman Dune size	30
+		Herman DÌ_ne size	17
+		Lou Rawls size	72
+		Lou Rawls and the Pilgrim Travelers size	1
+		Lou Rawls and the Chosen Gospel Singers size	1
+		Gladys Knight & The Pips size	48
+		Gladys Knight size	3
+		Gladys Knight And The Pips size	7
+		Moe Tucker size	46
+		Chic size	106
+		Dazz Band size	1
+		David Cassidy size	76
+		Van McCoy size	15
+		Angel Witch size	20
+		Looker size	10
+		Sun Kil Moon size	37
+		Klaus Doldinger's Passport size	1
+		Andrey Brandl size	1
+		14 Iced Bears size	1
+		Voice Of The Beehive size	44
+		Terry Edwards and the Scapegoats size	1
+		Tilly & The Wall size	35
+		Tilly And The Wall size	2
+		Ambulance Ltd size	21
+		Mumm-Ra size	13
+		The Blues Brothers size	30
+		The Flys size	4
+		World Party size	45
+		Marvin Gaye / Kim Weston size	22
+		Marvin Gaye & Kim Weston size	1
+		Joe South size	21
+		The Parties size	2
+		Sinitta size	41
+		Gloria Gaynor size	84
+		The Marcels size	37
+		Irma Thomas size	99
+		Irma Thomas / Ellis Marsalis size	1
+		Irma Thomas / David Torkanowski size	2
+		Irma Thomas / Norah Jones size	1
+		Irma Thomas / Dr. John size	1
+		Irma Thomas / Davell Crawford size	1
+		Irma Thomas / Tom McDermott size	1
+		Irma Thomas / Marcia Ball size	1
+		Irma Thomas / Henry Butler size	1
+		Donald Fagen size	30
+		The Field Mice size	42
+		Warren Zevon size	95
+		Beny More size	1
+		The Kingsmen size	52
+		No Age size	31
+		Sid Vicious size	23
+		Sex Pistols size	3
+		Sid Vicious_ the Idols size	8
+		Cutting Crew size	62
+		Flash And The Pan size	18
+		Swing Out Sister size	45
+		Tom Verlaine size	22
+		Jefferson Starship size	84
+		The Osmonds size	45
+		Bobby Womack size	82
+		Bobby Womack;The Brotherhood size	6
+		Bobby Womack / Wilton Felder size	1
+		The Supremes size	58
+		Donny Hathaway & Roberta Flack size	1
+		Roberta Flack & Donny Hathaway size	11
+		Good Shoes size	34
+		Jimmy Ruffin size	87
+		Jimmy Ruffin / David Ruffin size	3
+		Pete Molinari size	39
+		Pete Molinari Featuring The Jordanaires size	4
+		Willard Grant Conspiracy size	26
+		Mcfadden & Whitehead size	18
+		Glamma Kid size	1
+		Steve Hillage size	57
+		The 5th Dimension size	17
+		Jackhigh size	1
+		Hairy Diamond size	1
+		Plantlife size	34
+		Manoella Torres size	1
+		Sparkadia size	13
+		Diamond Head size	38
+		The Loaded Nuns size	1
+		Luke Doucet size	41
+		The Whispers size	50
+		Whispers size	1
+		Emily Loizeau size	11
+		Emily Loizeau / David-Ivar Herman DÌ_ne size	1
+		Emily Loizeau / David-Ivar Herman DÌ_ne / Jocelyn West size	1
+		Emily Loizeau / Moriarty size	2
+		AndrÌ© Manoukian - Emily Loizeau size	1
+		Lloyd Cole size	41
+		Split Enz size	14
+		Percy Sledge size	110
+		Bachman-Turner Overdrive size	72
+		Al Jarreau size	1
+		Percy Sledge feat. Kenny Rogers& Smokey size	1
+		Ike & Tina Turner size	3
+		The Belle Stars size	5
+		Belle Stars_ The size	1
+		Rod Lee size	100
+		The Gap Band size	47
+		Dawn Landes size	45
+		Bran Van 3000 size	48
+		Tom Tom Club size	28
+		Patti Smith size	88
+		Huey Lewis And The News size	67
+		Huey Lewis & The News size	9
+		Port O'Brien size	40
+		The Mutton Birds size	29
+		Tom Jones / Cerys Matthews size	1
+		Goo Goo Dolls size	35
+		The Goo Goo Dolls size	5
+		Thee Hypnotics size	33
+		Brand X size	84
+		Richard Pinhas size	44
+		Kendra Smith size	14
+		Alton Ellis size	72
+		Alton Ellis_ The Treasure Isle All Stars size	1
+		Alton Ellis_ The Flames size	1
+		Alton Eillis size	1
+		Alton Ellis (w The Sound Dimension) size	1
+		Alton Ellis / Tommy McCook / The Supersonics size	1
+		Alton Ellis / The Flames size	1
+		Screamin' Jay Hawkins size	85
+		Screamin Jay Hawkins size	2
+		Screaming Jay Hawkins size	17
+		The Pasadena Roof Orchestra size	1
+		Ann Cole size	1
+		Jay Hawkins size	3
+		Pitch Black Afro size	1
+		Stars size	92
+		The Stars size	3
+		Queen & David Bowie size	6
+		THE FATBACK BAND size	78
+		The Bonzo Dog Doo Dah Band size	43
+		The Bonzo Dog Band size	66
+		Tina Dico size	1
+		Run Level Zero size	1
+		Lutricia Mcneal size	24
+		Ultra Vivid Scene size	50
+		Rye Rye / M.I.A. size	1
+		Phil Manzanera size	43
+		Roxy Music size	1
+		Luther Vandross size	48
+		Luther Vandross Featuring Precise size	1
+		Luther Vandross featuring Deidre "Spin" Roper of Salt-n-Pepa size	1
+		Amy La Vere size	1
+		Prefab Sprout size	42
+		Player size	3
+		Christopher Cross size	50
+		The Chameleons size	36
+		The Chameleons UK size	14
+		Andrew Gold size	97
+		Wax size	3
+		Cameo size	80
+		Little Feat size	44
+		Little Feat (With Linda Ronstadt) size	1
+		Symarip size	25
+		Seven Letters size	8
+		The Pyramids size	1
+		Roy Ellis size	1
+		Moby Grape size	53
+		Simon Webbe size	45
+		Chris De Burgh size	55
+		Hazel O'Connor size	61
+		Hazel O'Connor / Moya Brennan size	1
+		Hazel O'Connor / Cormac Barra size	1
+		Jem size	30
+		Jem & J.C size	2
+		Howard Devoto size	12
+		Lamont Dozier size	45
+		George McCrae size	81
+		George McCrae & Flavour size	1
+		Dodgy size	50
+		The Farm size	49
+		The Farm/ Sandy B size	1
+		Albert Hammond size	43
+		Albert Hammond;Albert West size	1
+		Mary Jane Girls size	4
+		Trisha Yearwood size	43
+		Trisha Yearwood / Don Henley size	1
+		Trisha Yearwood / Rosanne Cash size	1
+		Trisha Yearwood / Garth Brooks size	1
+		Grandmaster Flash size	51
+		Grandmaster Flash / Melle Mel / Duke Bootee size	1
+		Grandmaster Flash & The Furious Five / Melle Mel size	1
+		Grandmaster Flash & The Furious Five size	1
+		The Electric Prunes size	44
+		Grant Lee Buffalo size	39
+		Foy Vance size	28
+		James & Bobby Purify size	31
+		Lene Marlin size	43
+		Bill Withers size	31
+		St. Vincent size	24
+		Lucie Silvas size	34
+		Seals and Crofts size	49
+		Kinesis size	25
+		Goa Doc size	3
+		Marc Minkowski size	1
+		Kirile Loo size	1
+		Serena-Maneesh size	9
+		Die Perlen size	1
+		Michael Dow size	1
+		Ali Love size	7
+		Chaka Khan size	2
+		Chaka Khan_ Rufus size	16
+		Rufus And Chaka Khan size	17
+		Rufus / Chaka Khan size	2
+		Big Mountain size	24
+		Big Mountain and Utah Green size	1
+		Jane Weaver size	16
+		Yuppie Flu size	1
+		Mark Kozelek size	29
+		These Are Powers size	23
+		Jens Lekman size	45
+		Misty's Big Adventure feat. Jeremy Vine size	1
+		Misty's Big Adventure size	48
+		Misty's Big Adventure feat. Noddy Holder size	1
+		The Artwoods size	1
+		Jackie Wilson size	74
+		LaVerne Baker size	1
+		The Godfathers size	1
+		Al Martino size	51
+		Griffin House size	1
+		Tavares size	105
+		United States Navy Band size	1
+		Ram Jam size	27
+		Bobby Fuller Four size	16
+		The Bobby Fuller Four size	61
+		The Randy Fuller Four size	2
+		Koko Taylor size	34
+		Koko Taylor_ Little Walter_ Hound Dog Taylor_ Dillard Crume_ Odie Payne size	2
+		Banda Da Forca Publica Do Estado De SP size	1
+		James Brown size	1
+		The Bar-Kays size	70
+		Barkays size	11
+		Larry D size	1
+		The Bar Kays size	1
+		The Bar - Kays size	1
+		Bachman Turner Overdrive size	1
+		Hound Dog Taylor size	2
+		Tom Robinson size	6
+		Patrice Rushen size	59
+		Minuta Ticha size	1
+		Johnny Bristol size	3
+		Alex Harvey Band size	23
+		The Sensational Alex Harvey Band size	62
+		The Monochrome Set size	62
+		Jeff Beck size	92
+		Jeff Beck withTerry Bozzio & Tony Hymas size	1
+		Jeff Beck and Rod Stewart;Jeff Beck & Rod Stewart size	1
+		Screaming Lord Sutch size	2
+		Jeff Beck / The Immediate All-Stars size	2
+		The Jeff Beck Group size	3
+		Jeff Beck/Rod Stewart size	1
+		New Fast Automatic Daffodils size	25
+		The New Fast Automatic Daffodils size	1
+		The Aggrolites size	56
+		Eisheilig size	1
+		Fire Engines size	27
+		Clout size	11
+		Change size	55
+		Change featuring Luther Vandross size	1
+		KC & The Sunshine Band size	62
+		KC & The Sunshine  Band size	1
+		KC And The Sunshine Band size	22
+		Sargasso Trio size	17
+		Patti Smith Group size	46
+		Kongrosjan size	1
+		Marianne Faithfull size	36
+		Anarchist Academy size	1
+		Marianne Faithfull Duet with Jarvis Cocker size	1
+		Marianne Faithful size	1
+		Billy Ray Cyrus size	34
+		Billy Ray Cyrus/Miley Cyrus size	1
+		THE TOM ROBINSON BAND size	57
+		Alela Diane [Feat Alina Hardin] size	6
+		Alela Diane size	27
+		Grandmaster Flash & Melle Mel size	3
+		Langhorne Slim size	27
+		Langhorne Slim_ The War Eagles size	13
+		Chills size	1
+		The Chills size	54
+		Krokus size	63
+		Boz Scaggs size	48
+		Boz Skaggs size	1
+		Andreas Johnson size	78
+		Klaus Schulze size	1
+		Pandit Shiv Kumar Sharma size	1
+		Andreas Johnson (Planet Waves) size	1
+		Aimee Mann size	99
+		Supertramp size	1
+		Anita Ward size	35
+		Anita Ward vs. Ringo Brothers size	4
+		Steely Dan size	97
+		Becker And Fagen size	1
+		Becker & Fagen size	1
+		The Surfaris size	17
+		Tuggawar size	1
+		Betty Everett size	67
+		Betty Everette size	1
+		Charlie Patton size	1
+		Joe Jackson size	38
+		Joe Jackson Band size	3
+		Big Star size	114
+		Big Star / Brother Joe May size	1
+		Esquerita size	1
+		Chris Bell size	2
+		Rock City size	2
+		Alex Chilton size	1
+		Icewater size	1
+		Thin Lizzy size	117
+		Horace Andy size	87
+		Mafia & Fluxy size	1
+		Billie Jo Spears size	1
+		Thelma Houston size	59
+		Amp size	1
+		Spear Of Destiny size	47
+		John Holt size	1
+		Chris Bathgate size	17
+		The Platters size	1
+		Mike Batt size	37
+		El Perro Del Mar size	38
+		Soul Asylum size	90
+		The Low Lows size	2
+		Danny Wilson size	42
+		Boyzone size	75
+		Boy Zone size	8
+		Colin Blunstone size	32
+		Jane Wiedlin size	28
+		Suzi Quatro size	89
+		Louis Corchia size	1
+		Rats size	1
+		Jeffrey & Jack Lewis size	9
+		Kristin Hersh size	64
+		The Finn Brothers size	1
+		Finn Brothers size	20
+		38 Special size	37
+		Laura Nyro size	78
+		Laura Nyro;LaBelle size	3
+		Nancy Wallace size	1
+		Monkey Swallows The Universe size	12
+		Fat Larry's Band size	9
+		Len Barry size	23
+		Dolly Parton & Kenny Rogers size	1
+		Tippa Irie / Peter Hunnigale size	1
+		Tippa Irie / Peter Hunningale size	8
+		Tippa Irie size	25
+		Yoko Ono size	45
+		Yoko Ono And IMA size	5
+		Ike Turner size	22
+		Ike Turner & Tina Turner size	1
+		Ike Turner_ Tina Turner size	1
+		Jackie Brenston size	1
+		Boyd Gilmore size	1
+		Charley Booker size	2
+		Baby Face Turner size	1
+		Little Junior Parker & the Blue Flames size	1
+		Bobby Bland size	1
+		Sunny Blair size	1
+		Ike Turner's Orchestra size	1
+		Beverley Craven size	44
+		Jesus Jones size	110
+		Los Sonor's size	1
+		The Frank And Walters size	11
+		Frank and Walters size	1
+		The Doobie Brothers size	101
+		Doobie Brothers size	8
+		Jonathan Richman size	29
+		David Karsten Daniels size	22
+		The Mission size	38
+		Jr. Walker & The All Stars size	59
+		Finley Quaye size	38
+		Finley Quaye;Beth Orton size	1
+		Nick Kamen size	3
+		Maxine Nightingale size	6
+		The DJs Of Euro Trance size	1
+		Liam Lynch size	92
+		GENESIS P-ORRIDGE and PSYCHIC  TV size	1
+		Peter Green size	15
+		Peter Green Splinter Group size	10
+		Grizzly Bear size	35
+		Atlas Sound size	1
+		Band Of Horses size	2
+		Ry Cooder & Manuel Galban size	12
+		Steve Winwood size	23
+		The Rutles size	41
+		Barrington Levy size	42
+		Version size	1
+		The Elgins size	67
+		James Eastwood size	1
+		Berlin size	40
+		Terri Nunn and Berlin size	1
+		Love & Money size	23
+		THE CHIFFONS size	72
+		Gigolo Aunts size	23
+		Brinsley Schwarz size	21
+		The Chi-Lites / The Whispers size	5
+		Chi-Lites size	11
+		Nirvana On Tap size	1
+		The Chi-Lites size	35
+		The Chi Lites size	11
+		Chuck E. Weiss size	36
+		Lesley Gore size	31
+		The Jeff Healey Band size	73
+		Jon & Vangelis size	20
+		Jackson Conti size	16
+		Teddy Pendergrass size	76
+		Devon Niko size	3
+		Teddy Pendergrass & Friends size	2
+		Jona Lewie size	57
+		MJ Hibbett & the Validators size	6
+		Third Eye Blind size	53
+		Raul MidÌ_n size	20
+		RaÌ_l MidÌ_n size	14
+		Raul Midon size	12
+		Irene Cara size	10
+		Lifelike & Kris Menace size	1
+		Brian Protheroe size	1
+		John Waite size	53
+		The Posies size	10
+		Spin Doctors size	37
+		Stephen Malkmus size	35
+		BjÌülsen ValsemÌülle size	1
+		Oleta Adams size	35
+		Appendix Out size	2
+		Des'ree size	56
+		Desiree size	4
+		Eric Carmen size	44
+		World Of Twist size	24
+		John Fahey size	71
+		Francisco Zornoza DÌ_ez size	1
+		Simon Fisher Turner size	1
+		The Pixie Bennett Band size	1
+		John Fahey / Richard Ruskin size	1
+		Caspa Houser size	1
+		Del Shannon size	55
+		Robbie Nevil size	13
+		Aztec Camera size	49
+		The Lemon Pipers size	6
+		Lemon Pipers size	1
+		El Guincho size	24
+		Martha & The Vandellas size	87
+		Martha and the Vandellas size	2
+		Jennifer Warnes size	37
+		Jennifer Warnes;Max Carl size	1
+		The Robert Cray Band size	65
+		The Robert Cray Band / The Memphis Horns size	10
+		Dandy Livingstone size	26
+		Velvet Revolver size	33
+		The Hot Puppies size	33
+		Franco Corelli/Orchestra/Franco Ferraris size	1
+		The Chap size	61
+		The Chap vs. Joakim size	1
+		JosÌ© Serebrier size	1
+		Nina & Mike size	1
+		New Radicals size	13
+		Celia Cruz size	64
+		Celia Cruz/Tito Puente size	3
+		Los Kochos De Guerrero size	1
+		Celia Cruz - La Sonora Matancera size	3
+		Celia Cruz Y Sonora Matancera size	1
+		Celia Cruz and La Sonora Matancera size	5
+		Celia Cruz & Tito Puente size	4
+		mechanical bride size	7
+		White Plains size	28
+		The Blue Nile size	32
+		Cerys Matthews size	1
+		Keb' Mo';Peter Maffay size	1
+		Keb' Mo' size	90
+		Keb'Mo' size	2
+		A Silent Film size	11
+		Bread size	75
+		Bread feat. Call Back size	1
+		Primitive Radio Gods size	30
+		Primitive Radio Gods;C. O'Connor size	1
+		Jenn Grant size	12
+		Freda Payne size	68
+		The Lotus Eaters size	15
+		Gene Chandler size	92
+		Gene Chandler / Will Ferrell size	1
+		Clarence Carter size	1
+		Inner City size	74
+		Dick Dale size	31
+		Dick Dale & His Del-Tones size	9
+		Sonny & Cher size	83
+		Sonny & Cher (aka Ceasar & Cleo) size	1
+		Cher size	1
+		The Miracles size	38
+		The Miracles Greatest Hits size	1
+		Smokey Robinson & The Miracles size	1
+		James 'Trek-e' Smith size	1
+		The Miracles / Billy Griffin size	1
+		Train size	77
+		FBOM size	1
+		T-Rain size	1
+		The Meters size	112
+		Three Dog Night size	10
+		Amy Grant size	41
+		Richard Shulman size	1
+		Amy Grant Featuring Sarah Chapman size	1
+		John's Children size	2
+		Chairmen Of The Board size	70
+		The Chairmen of the Board size	13
+		Chairmen Of The Board featuring Prince Harold size	1
+		Chairmen Of The Board & General Johnson size	1
+		Seventeen Evergreen size	16
+		Terry Callier size	113
+		Terry Callier / Beth Orton size	1
+		Glen Campbell size	82
+		Turisas size	1
+		PAULA COLE size	50
+		Marlena Shaw size	41
+		The Maisonettes size	1
+		Secret Affair size	17
+		Galliano size	51
+		Anne Murray size	49
+		Sugar Ray size	48
+		Sugar Ray;Tha Alkaholiks size	1
+		Sugar Ray (Featuring Nick Hexum) size	1
+		Sugar Ray feat. Super Cat size	1
+		Yvonne Elliman size	15
+		Yvonne Elliman / Michaek Jason / Marc Pressel size	1
+		Yvonne Elliman / Ben Vereen / Jeff Fenholt / Marc Pressel size	1
+		Yvonne Elliman / Murray Head size	1
+		Yvonne Elliman / Ian Gillan size	1
+		Superstars der Volksmusik size	1
+		Bill Callahan size	1
+		Bobbie Gentry size	97
+		Glen Campbell And Bobbie Gentry size	1
+		Buraka Som Sistema size	31
+		Buraka Som Sistema featuring Deize Tigrona size	1
+		Buraka Som Sistema featuring Bruno M size	1
+		Buraka Som Sistema featuring Petty size	2
+		Buraka Som Sistema featuring Kano size	1
+		Buraka Som Sistema featuring Pongolove size	1
+		Sister Sledge size	110
+		Wild Strawberries size	49
+		ARRESTED DEVELOPMENT size	79
+		Mikey Dread size	99
+		C.W. Stoneking size	2
+		Mink DeVille size	71
+		The Waves size	1
+		The Glamour Stars size	1
+		Jimmy Cliff size	89
+		The Disco Kings size	1
+		Laurie Anderson size	100
+		Bruce Hornsby and the Range size	31
+		Hot Snakes size	5
+		The Young Rascals size	11
+		GRANDADDY size	43
+		The Blow Monkeys Featuring Curtis Mayfield size	3
+		The Blow Monkeys size	38
+		The Blow Monkeys Featuring Sylvia Tella size	3
+		The Blow Monkeys Featuring Kym Mazelle size	1
+		CH2K size	1
+		The Blow Monkeys;Dr. Robert;Curtis Mayfield size	1
+		Herb Alpert / Lani Hall size	14
+		Herb Alpert size	11
+		Herb Alpert with Janet Jackson size	1
+		1 Giant Leap feat. Baaba Maal size	2
+		Baaba Maal size	88
+		Baaba Maal_ Mansour Seck size	11
+		Baaba Maal feat. Screaming Orphans size	1
+		Baaba Maal feat. Luciano size	1
+		Baaba Maal / Taj Mahal / Kaouding Cissoko / Antibalas size	1
+		Khayree size	1
+		The Mamas & The Papas size	70
+		Mama Cass size	1
+		The Mamas And The Papas size	1
+		MAMAS & Papas size	1
+		Subtle size	25
+		Subtle feat. Chris Adams size	1
+		Davy Graham size	1
+		Alexis Korner size	35
+		Tubby Hayes_ Jimmy Deuchar_ Terry Shannon_ Freddy Logan_ Allan Ganley size	4
+		Tubby Hayes size	23
+		Jack Parnell & His Orchestra size	2
+		Tubby Hayes Quintet size	1
+		Tubby Hayes & His Orchestra size	7
+		Tubby Hayes feat. Kenny Lynch size	1
+		Birdsongs of the Mesozoic size	56
+		The Young Republic size	24
+		Suzanne Vega size	42
+		Bobby Vinton size	51
+		Bobby Vinton; Arranged & Conducted by Burt Bacharach size	1
+		The Cute Lepers size	28
+		Cute Lepers size	1
+		Nu Shooz size	13
+		Brian Wilson size	99
+		Brian Wilson / Wendy Wilson / Carnie Wilson size	1
+		Lone Justice size	40
+		Lone Justice / Maria McKee size	1
+		Force M.D.'s size	13
+		Force Md S size	1
+		Pat Benatar size	42
+		Johnny Dowd size	53
+		The Flaming Sideburns size	1
+		Johnny DJ & Steve B size	2
+		Javi Sanchez size	1
+		Johnny Dowd With Maggie Brown size	1
+		Johnny Dj size	1
+		Joe Strummer size	35
+		Sarah Chen size	1
+		Joe Strummer And The Mescaleros size	8
+		Joe Strummer;The Mescaleros size	2
+		Johnny Guitar Watson size	2
+		Johnny "Guitar" Watson size	12
+		South Central Cartel feat. Young Prod size	1
+		Johnny 'Guitar' Watson size	3
+		Mark Mulcahy size	2
+		Foxx size	6
+		Cockney Rebel size	28
+		Steve Harley & Cockney Rebel size	1
+		The B-52's size	66
+		The B-52s size	19
+		Little Richard size	80
+		Beats For Beginners size	15
+		Captain Beefheart size	23
+		Captain Beefheart & His Magic Bands size	5
+		Captain Beefheart & The Magic Band size	3
+		Captain Beefheart & His Magic Band size	1
+		The Four Seasons size	9
+		Journey size	74
+		Journey Featuring Lead Vocals by Steve Augeri size	1
+		Journey featuring Max Stellato size	1
+		Journey & Mental Broadcast size	1
+		Journey_ M-Theory & OrgaPulse size	1
+		Commodores size	70
+		The Commodores size	8
+		Lionel Richie size	110
+		The Commodores & Lionel Richie size	3
+		Neil Finn size	45
+		Erma Franklin size	3
+		Erma Franklyn size	1
+		Julie Collings size	22
+		The Clientele size	56
+		Joele Nadel size	1
+		The Wanderers size	1
+		Little Anthony & The Imperials size	44
+		Little Anthony_ The Imperials size	2
+		Little Anthony and The Imperials size	18
+		Dobie Gray size	28
+		The Rubinoos size	5
+		Michael Packer Blues Band size	1
+		kava kon size	1
+		Terry Reid size	43
+		Archie Bell and The Drells size	56
+		Archie Bell & The Drells size	17
+		Livio Minafra size	1
+		Carpenters size	116
+		The Carpenters size	2
+		Karen Carpenter size	1
+		The Chesterfields size	1
+		David Grant & Jaki Graham size	11
+		Kingdom Feat. Shyvonne size	1
+		Kingdom size	39
+		The Lothian Scottish Dance Band size	1
+		The Xcerts size	13
+		The Xcerts/The Blueskies size	1
+		Jah Wobble size	45
+		Jah Wobble's Invaders Of The Heart size	1
+		Sir Douglas Quintet size	38
+		Rosie Vela size	2
+		Firstclass size	1
+		First Class size	11
+		The First Class size	33
+		Harold Melvin & The Blue Notes featuring Teddy Pendergrass size	3
+		Amy Blaschke size	1
+		Harold Melvin & The Blue Notes size	20
+		Harold Melvin & The Blue Notes (Featuring Teddy Pendergrass size	4
+		Harold Melvin & The Blue Notes (Featuring Teddy Pendergrass) size	2
+		Harold Melvin And The Blue Notes size	1
+		Harold Melvin & The Bluenotes size	4
+		Johnny Nash size	57
+		The Auteurs size	50
+		Tyrannosaurus Rex size	12
+		Marc Bolan size	3
+		The Ethiopians size	23
+		Ethiopians size	1
+		Big Youth size	40
+		Big Youth / Vivian "Yabby U" Jackson size	1
+		Welton Irie size	1
+		Big Youth / Leroy Smart size	1
+		Mahalia Jackson size	53
+		Mahalia Jackson; Arranged & conducted by Marty Paich size	1
+		Kap Bambino size	23
+		Black Label Society size	2
+		Zakk Wylde size	12
+		Boris Gardiner size	26
+		Boris Gardiner / The Love People size	1
+		Someone Still Loves You Boris Yeltsin size	17
+		Someone Still Loves You Boris size	10
+		Someone Still Loves You Boris Yeltsin / Puzzle size	4
+		Pere Ubu size	37
+		The Heart Throbs size	42
+		Donny Osmond / Marie Osmond size	7
+		Donny Osmond size	37
+		Marie Osmond size	1
+		Shirley & Company size	11
+		The Tremeloes size	23
+		Tremeloes size	1
+		Michelle Gayle size	26
+		Humble Pie size	54
+		Sharon Jones & The Dap-Kings size	45
+		Sharon Jones & The Dap Kings size	2
+		The Feelies size	22
+		Adi Smolar size	1
+		The Flies size	20
+		Andrea True Connection size	9
+		Andrea True size	1
+		Living In A Box size	35
+		Bob Seger & The Silver Bullet Band size	2
+		Bob Seger size	1
+		Ultimate Tracks size	1
+		Giorgio Binda size	1
+		Cathy Davey size	41
+		Gregory Isaacs size	143
+		Gregory Isaac size	4
+		Speiche size	1
+		Gregory Issacs size	2
+		Rose Royce size	75
+		Jermaine Jackson size	69
+		Jermaine Jackson / Tata Vega size	1
+		Jermaine Jackson / Jocelyn Brown size	1
+		Jermaine Jackson Featuring Babyface size	1
+		The Chordettes size	61
+		Chordettes size	34
+		Noel Harrison size	29
+		School Of Language size	14
+		Gary U.S. Bonds size	40
+		Gaz Nevada size	1
+		Close Combat size	16
+		Regulations size	28
+		Know The Drill size	1
+		Ratos de Porao size	20
+		Ratos de PorÌ£o size	30
+		Blaze size	67
+		Blaze feat. Palmer Brown size	1
+		Blaze ft. Palmer Brown size	1
+		Blaze & Palmer Brown size	1
+		Blaze feat. Barbara Tucker size	8
+		Blaze Ya Dead Homie size	1
+		Blaze feat. Byron Stingily size	1
+		The Subhumans size	15
+		K.U.K.L size	16
+		Oui Oui size	14
+		The Radiators (From Space) size	13
+		The Radiators From Space size	1
+		Les MisÌ©rables size	2
+		Les MisÌ©rables - 10th Anniversary Concert size	30
+		Les MisÌ©rables - Original London Cast size	15
+		Les MisÌ©rables: Complete Symphonic Recording size	1
+		Pointed Sticks size	45
+		Radio Birdman size	13
+		Supersnazz size	2
+		Venerea size	50
+		Dezerter size	1
+		D.N.A. size	1
+		Mob 47 size	3
+		59 Times the Pain size	49
+		Kommando Sonne-nmilch size	1
+		Nevrotic Explosion size	11
+		Argy Bargy size	46
+		Evil Conduct size	27
+		Warum Joe size	4
+		Shotgun size	2
+		Orgasm Guerillas size	1
+		The Orgasm Guerillas size	1
+		Stalin vs. Band size	9
+		The Dishrags size	1
+		Dishrags size	1
+		Pinchers size	86
+		Pinchers & Ganglords size	1
+		Sly And Robbie size	1
+		De Jeugd Van Tegenwoordig size	3
+		Innocents size	14
+		The Bradleys size	1
+		The Criminals size	3
+		Die Original Wiener Schrammeln size	1
+		Prljavo Kazaliste size	3
+		Rena Ntallia size	1
+		Norman Palm size	1
+		Sherwood size	18
+		Wargasm size	1
+		Fall Out size	29
+		Tragedy size	36
+		Tragedy feat. Smitty size	1
+		Tragedy feat. Alkendria size	2
+		Tragedy feat. Big Nate & Son Zu size	1
+		Tragedy feat. Shei Atkins size	1
+		Tragedy feat. Big Nate size	1
+		Tragedy feat. SOJ & Big Nate size	1
+		Death In Vegas size	1
+		Tragedy Khadafi size	1
+		Svart Framtid size	2
+		Dayglo Abortions size	65
+		Ludwig Von 88 size	2
+		Los Violadores size	33
+		Hi-Standard size	41
+		Raw Power size	66
+		Les GarÌ_ons Bouchers size	39
+		Laughin'Nose size	50
+		Hladno Pivo size	50
+		S.Y.P.H. size	33
+		The Browns size	6
+		The Browns featuring Mello D size	1
+		The Browns featuring Jim Ed Brown size	3
+		They Might Be Giants size	7
+		T.S.O.L. size	33
+		TSOL size	17
+		Voodoo Glow Skulls size	45
+		Sondaschule size	49
+		The Real McKenzies size	67
+		The Almighty Trigger Happy size	27
+		Misconduct / The Almighty Trigger Happy size	5
+		Rough Trade size	2
+		The Scientists size	37
+		Scientists size	7
+		Deadlock size	23
+		Opcio K-95 size	1
+		Tagada Jones size	32
+		Tagada Jones vs Cellule X size	1
+		Tagada Jones vs Punish Yourself size	1
+		The Bodysnatchers size	6
+		Les NÌ©gresses Vertes size	58
+		Common / Mary J. Blige size	1
+		Across the Border size	40
+		Submission Hold size	9
+		The Arrogant Sons Of Bitches size	25
+		The Chosen Few size	11
+		Siniestro Total size	84
+		The Weakerthans size	48
+		Verbal Abuse size	43
+		Sods size	1
+		Gis(m) size	1
+		Sinergia size	11
+		Lost Kids size	1
+		Problem size	1
+		The Leftovers size	32
+		Tsunami Bomb size	24
+		Pf Commando size	1
+		Funeral Dress size	37
+		Fridge vs. The Hitmen size	1
+		Stormin' Norman & Friends size	1
+		Moccia Alessandro_JÌ©rÌ«me HantaÌø_Sophie Daneman_Paul Agnew_Peter Harvey_Alix Verzier size	1
+		Fridge size	16
+		iisiJii size	1
+		Pothole Skinny size	1
+		Il Divino Otelma size	1
+		The Execute size	1
+		Execute size	1
+		The Ex size	2
+		Puppetmastaz size	1
+		Distrust size	10
+		Manifesto Jukebox size	9
+		Starshooter size	50
+		Kitchener size	29
+		Les Dileurs size	1
+		Hard-Ons size	50
+		Negative Trend size	4
+		Corrupted Ideals size	16
+		Sick Things size	3
+		Propagandhi size	47
+		Stage Bottles size	13
+		Mano Negra size	77
+		Church Of Confidence size	1
+		Dean Dirg size	11
+		Guilty Razors size	1
+		Super Heroines size	33
+		N-Liners size	1
+		Visaci Zamek size	29
+		Charge 69 size	41
+		The Jets size	78
+		The Jet's size	1
+		The Jets & The Sharks & Leonard Bernstein&The New York Philharmonic Orchestra size	2
+		Haywire size	6
+		The Spook size	11
+		Pork Dukes size	19
+		The Pork Dukes size	15
+		Les Collabos size	1
+		Houba size	1
+		Pulley size	58
+		The Joykiller size	1
+		Untermensch size	2
+		Vagrants size	3
+		Mecano size	55
+		Sensuuri size	31
+		Kleenex size	33
+		Liliput size	17
+		Darling Genocide size	1
+		Prole size	3
+		Crossed Hammers size	1
+		Les Wampas size	43
+		Vicious Rumours size	27
+		Too Much size	3
+		The Thought  Criminals size	4
+		The Thought Criminals size	3
+		SNFU size	34
+		Useless I.D. size	10
+		Useless Id size	2
+		Appendix size	4
+		Rejected Youth size	14
+		WC size	7
+		WC / Dr. Stank / Lady T / Deville size	1
+		WC / Toofpick From South-West size	1
+		WC / Ice Cube / MC Ren size	2
+		WC / Case size	1
+		WC / Butch Cassidy size	2
+		WC / Scarface size	1
+		WC / Kokane size	1
+		WC / Gangsta size	1
+		WC / Snoop Dogg / Nate Dogg size	2
+		WC / Ice Cube / Mack 10 size	1
+		Thee S.T.P. size	46
+		Betong Hysteria size	2
+		Elektricni orgazam size	45
+		Planlos size	40
+		1984 size	3
+		50 Lions size	12
+		Boyracer size	40
+		Condemned 84 size	85
+		Teengenerate size	1
+		Kafka Prosess size	1
+		Taxi Girl size	9
+		La Souris DÌ©glinguÌ©e size	21
+		Crude SS size	1
+		Shawn Colvin size	94
+		New Grass Revival size	39
+		Oriental Funk size	1
+		Steve Forbert size	34
+		Asylum Street Spankers size	100
+		Ruthie Foster size	23
+		Fixx size	1
+		David Olney size	41
+		Heidi Talbot size	13
+		Eliza Carthy size	26
+		Oscar Woods size	1
+		JÌ_rgen Schwenkglenks size	1
+		Eliza Carthy/Chris Wood/Trans-Global Underground/The Young Copper Family size	1
+		Seth Lakeman size	48
+		Michael Hurley size	49
+		Fred Eaglesmith size	98
+		Ivan Cattaneo size	1
+		The Riverdance Orchestra / Proinnsias O'Duinn size	1
+		AnÌ_na / Michael McGlynn size	1
+		Bill Whelan size	18
+		Davey Spillane / AnÌ_na / Michael McGlynn / Tommy Hayes / Des Reynolds size	1
+		Bill Whelan / Tsidii Le Loka / Eoghan O'Neill / Des Moore / Noel Heraty / Robbie Harris / The Amanzi Singers size	1
+		Bill Whelan / Brian Kennedy / Ivan Goff / The Riverdance Orchestra / Proinnsias O'Duinn size	1
+		Bill Whelan / Tsidii Le Loka / Proinnsias O'Duinn / The Amanzi Singers / The Riverdance Orchestra / Redd Foxx size	1
+		Bill Whelan / Nikola Parov / Mairtin O'Connor / Kenneth Edge / Eoghan O'Neill / Des Moore / Des Reynolds / Ivan Goff / Robbie Harris / Abe Doron / Zoe Conway / The Riverdance Singers / Proinnsias O'Duinn / The Riverdance Orchestra / Various Artists size	1
+		Davey Spillane size	1
+		Vusi Mahlasela / Derek Trucks size	1
+		Vusi Mahlasela size	41
+		Vusi Mahlasela / Jem size	1
+		Vusi Mahlasela / Xavier Rudd size	1
+		Vusi Mahlasela / Ladysmith Black Mambazo size	1
+		Vusi Mahlasela / Dave Matthews size	1
+		Vusi Mahlasela;Ribecca Mahlasela size	1
+		Jeffrey Foucault size	1
+		Acoustic Syndicate size	1
+		Sliding Hammers size	1
+		Shirley Collins size	23
+		Shirley Collins / Albion Country Band size	2
+		Shirley Elizabeth Collins size	2
+		Shirley Collins_ Dolly Collins size	18
+		Colin Meloy size	19
+		Bohola size	11
+		Gerry And The Pacemakers size	1
+		Moving Hearts size	22
+		Lucy Kaplansky size	2
+		Textile Ranch / Charles Atlas size	1
+		Kris Delmhorst size	1
+		Cracker/Leftover Salmon size	10
+		Bjornemyr size	1
+		Nitty Gritty Dirt Band size	79
+		The Nitty Gritty Dirt Band size	3
+		Dreamparty size	1
+		The Nitty Gritty Dirt Band Featuring Johnny Cash size	1
+		Hot Rize size	6
+		Thea Gilmore size	38
+		Thea Gilmore Featuring Mike Cave size	1
+		Chip Taylor_ Carrie Rodriguez size	46
+		Tish Hinojosa size	37
+		King Wilkie size	13
+		Asleep At The Wheel size	73
+		The Pine Leaf Boys size	1
+		Pine Leaf Boys size	24
+		Jonatha Brooke size	81
+		Jonatha Brooke / Keb' Mo' size	1
+		Jonatha Brooke / Eric Bazilian size	1
+		Jonatha Brooke / Derek Trucks size	1
+		Doc Watson size	39
+		Doc & Merle Watson size	5
+		Doc Watson / Clint Howard / Fred Price size	1
+		Doc Watson Family size	1
+		The Doc Watson Family size	7
+		The Whites size	2
+		Robin & Linda Williams size	2
+		Kasey Chambers size	48
+		Kasey Chambers Featuring The Living End size	1
+		Alastair Moock size	23
+		Norman Blake size	33
+		Burns size	6
+		Tony Rice size	84
+		Enter the Haggis size	10
+		Wattie Watson and Friends size	1
+		The Greencards size	47
+		Taj Mahal size	44
+		Taj Mahal And Toumani Diabate size	1
+		Ottmar Liebert size	95
+		Trance Groove size	1
+		Abe Vigoda size	1
+		Ottmar Liebert_ Luna Negra size	6
+		The Bothy Band size	1
+		Bothy Band size	2
+		Joan Osborne size	90
+		Loudon Wainwright III size	88
+		Loudon Wainwright III (Lucy Wainwright Roche) size	1
+		Cortez size	1
+		David Bromberg size	60
+		David Bromberg Band size	2
+		South Austin Jug Band size	11
+		Guy Clark size	33
+		Saxology Quartet size	1
+		Graham Nash / David Crosby size	1
+		The Hollies size	1
+		Pentangle size	10
+		Pentangle / The David Munrow Ensemble size	1
+		Dar Williams size	82
+		Shannon McNally size	39
+		Bruce Robison size	26
+		Lori McKenna size	26
+		Emmylou Harris size	88
+		CÌ©line Frisch size	1
+		Emmylou Harris with Ricky Skaggs size	1
+		Emmylou Harris / Alison Krauss / Gillian Welch size	1
+		Emmylou Harris with Gram Parsons size	1
+		Emmylou Harris with Dolly Parton and Linda Ronstadt size	1
+		Emmylou Harris & John Starling size	1
+		Emmylou Harris & Patty Griffin size	1
+		Emmylou Harris with Fayssoux Starling size	1
+		Andy Irvine size	3
+		Sam Bush size	80
+		Jodelduett Schweizer - Zwahlen size	1
+		Mark Knopfler / Emmylou Harris size	12
+		Uwe Busse size	1
+		Lavender Diamond size	17
+		Martin Carthy size	53
+		Blind John Davis size	1
+		Martin Carthy_ Dave Swarbrick size	10
+		Martin Carthy / Fairport / Ian Wilson size	1
+		Martin Carthy with Dave Swarbrick size	19
+		Martin Carthy/Eliza Carthy/Paul Weller size	1
+		Krista Detor size	39
+		Cherish The Ladies size	40
+		Stomy Bugsy size	1
+		Sidonio Pereira size	1
+		Outformation size	1
+		Robert Earl Keen size	29
+		Christine Lavin size	25
+		Bill Morrissey size	2
+		Modena City Ramblers size	8
+		John Hammond / Duane Allman size	1
+		John Hammond size	87
+		John Hammond_ Jr. size	2
+		Country Joe McDonald size	50
+		Susan McKeown size	22
+		Georges Guelters size	1
+		Paul Brady size	31
+		Sharron Kraus size	25
+		Odetta size	43
+		Odetta / Larry Mohr size	1
+		Dougie MacLean size	24
+		The Red Stick Ramblers size	1
+		Red Stick Ramblers size	24
+		Sylvie Lewis size	23
+		Uncle Tupelo size	83
+		Orthodox Celts size	11
+		Habib KoitÌ© size	2
+		Habib KoitÌ© & Bamada size	1
+		The Infamous Stringdusters size	36
+		Steve Goodman size	100
+		Old Blind Dogs size	13
+		Dan Bern size	47
+		Magna Carta size	38
+		Doyle Lawson & Quicksilver size	7
+		James Keelaghan size	21
+		Peter Rowan size	84
+		Peter Rowan_ Lowell Levinger size	1
+		Over The Rhine size	43
+		Hot Tuna size	99
+		De Sela Lhasa size	10
+		Lhasa De Sela size	22
+		Townes Van Zandt size	61
+		Townes Zandt size	1
+		Punch Brothers size	8
+		RODNEY CROWELL size	80
+		Rodney Crowell;Rosanne Cash size	1
+		Veda Hille size	17
+		Veda Hille & Robin Holcomb/Francois Houle size	1
+		Alejandro Escovedo size	46
+		Johnny Paycheck size	1
+		Wolfgang Herrmann size	1
+		LANDA DANIEL size	1
+		The Incredible String Band size	50
+		The Poozies size	10
+		Clannad size	94
+		Djelem size	1
+		Maire Ni Bhroanain size	1
+		Clannad;Anto Drennan;Ian Melrose size	1
+		Clannad;Ian Melrose size	1
+		Clannad;Anto Drennan;Ian Parker;Deirdre Brennan;Paul Moran size	1
+		Clannad;Noel Duggan;Ian Melrose;Paul Moran;Anto Drennan;David Downes;Ian Parker size	1
+		Clannad;Anto Drennan;Ian Melrose;Paul Moran;Ciaran Toorish;Ian Parker size	1
+		Clannad;John McSherry;Ian Parker;Anto Drennan;Deirdre Brennan size	1
+		Clannad;Mel Collins;Ian Melrose;Ian Parker;Paul Moran size	1
+		Clannad;CiarÌÁn Brennan;Anto Drennan;Vinnie Kilduff size	1
+		The Gabe Dixon Band size	32
+		The Gabe Dixon Band / Mindy Smith size	1
+		Lou Rhodes size	37
+		Religious Knives size	1
+		Doyle Dykes size	14
+		Alvin Youngblood Hart size	16
+		Sir Thomas Allen/Geoffrey Parsons size	1
+		Alvin YoungbloodåÊHart size	24
+		Cowboy Junkies size	55
+		Various Artists- Jarmusic size	1
+		Cowboy Junkies_ Various Artists size	1
+		Railroad Earth size	37
+		Willy Porter size	62
+		Millie Jackson size	1
+		Horslips size	33
+		Grupo Nueva Vida size	1
+		Fotheringay size	17
+		Fotheringay / Sandy Denny size	1
+		Holy Modal Rounders size	10
+		The Duhks size	49
+		Kate Rusby size	3
+		John Hartford size	27
+		IIIRD Tyme Out size	68
+		Kris Kristofferson size	97
+		Tangerine Dream size	1
+		Kris Kristofferson with Rita Coolidge size	3
+		Kris Kristofferson with Larry Gatlin size	1
+		Kris Kristofferson;Willie Nelson size	1
+		Woody Guthrie size	78
+		Cisco Houston size	1
+		Woody Guthrie & Jack Elliott size	18
+		Junior Brown size	1
+		JayMay size	42
+		Jamie O'Neal size	24
+		Jamie O'Neal / Mark Wills size	1
+		James Yorkston and The Athletes size	13
+		James Yorkston                                                                                 The Athletes size	1
+		James Yorkston size	27
+		Alison Krauss size	1
+		Natalie MacMaster;Dave MacIsaac;Paddy Moloney;Martin Fay;SeÌÁn Keane;Matt Molloy;Derek Bell;Kevin Conneff size	1
+		Natalie MacMaster size	42
+		Ricky Skaggs & Kentucky Thunder size	1
+		Tony Trischka size	21
+		Mauro Dirago size	1
+		Harry Manx & Kevin Breit size	12
+		The Subdudes size	46
+		MARC COHN size	35
+		Crooked Still size	10
+		Jehro size	1
+		Peppino D'Agostino size	12
+		Ramblin' Jack Elliott size	41
+		Ramblin' Jack Elliot size	3
+		Sam Auinger & Claas Willeke size	1
+		Veron size	1
+		Danu size	35
+		Jerry Jeff Walker size	71
+		Circus Maximus size	1
+		Xavier Mugardos size	1
+		Natalia Zukerman size	1
+		Cliff Eberhardt size	11
+		Gino Paoli size	1
+		Steve Riley & The Mamou Playboys size	37
+		Dr. Strangely Strange size	12
+		De Dannan size	31
+		Tommy Fleming size	1
+		Tommy Fleming / De Danann size	2
+		De Danann size	1
+		Barbara Kessler size	2
+		Gillian Welch size	48
+		Original Size size	1
+		Gillian Welch & David Rawlings size	1
+		Madeleine Peyroux / k.d. lang size	1
+		Madeleine Peyroux size	41
+		The Klezmatics size	41
+		The Klezmatics with Joshua Nelson and Kathryn Farmer size	1
+		The Klezmatics with Joshua Nelson & Kathryn Farmer size	2
+		The Klezmatics with Kathryn Farmer size	1
+		The Klezmatics with Joshua Nelson size	2
+		The Klezmatics feat. Les Miserables Brass Band size	2
+		Bon Iver size	15
+		ROBERT MIRABAL size	66
+		The Wiyos size	12
+		Espers size	31
+		Tommy Fiammenghi size	1
+		Rhonda Vincent size	76
+		Rhonda Vincent / Bobby Osborne size	1
+		Rhonda Vincent / Ben Helson size	1
+		Rhonda Vincent / Russell Moore size	1
+		Rhonda Vincent / Keith Urban size	1
+		Rhonda Vincent / Alison Krauss size	1
+		Liz Carroll size	1
+		Jessi Colter / Waylon Jennings size	1
+		Seamus Tansey size	1
+		Saturday Night - World Premiere Recording size	1
+		Vance Gilbert size	1
+		Pierre Bensusan size	11
+		Jake Shimabukuro size	48
+		Jake Shimabukuro;Yo-Yo Ma size	1
+		AdriÌÁn Iaies size	1
+		Levon Helm size	35
+		Levon Helm And The RCO All Sta size	13
+		Arlo Guthrie size	16
+		Jimmy LaFave size	100
+		Bill Kirchen size	1
+		Antonella Marchetti size	1
+		Bruce Hornsby size	28
+		Bruce Hornsby with the Fairfield Four size	1
+		Steven Delopoulos size	12
+		Ellis Paul size	14
+		Jack Rose size	33
+		Jack Rose_ The Black Twig Pickers size	3
+		Navan Man size	1
+		Gary Moore size	1
+		Thorsten Flinck size	1
+		Lynda Lemay size	1
+		Great Big Sea;Alan Doyle;Darrell Power;SeÌÁn McCann;Bob Hallett;Kevin Conneff;Matt Molloy;Martin Fay;SeÌÁn Keane;Paddy Moloney;Derek Bell size	1
+		Great Big Sea size	13
+		Abigail Washburn size	18
+		Indigo Girls size	43
+		Russ Barenberg size	1
+		Baden Powell & filhos size	1
+		Kate & Anna McGarrigle size	20
+		Kate McGarrigle_ Anna McGarrigle size	1
+		Kate & Anna McGarrigle with Rufus Wainwright size	1
+		Chaim Tannenbaum size	1
+		Rufus Wainwright size	2
+		Kate & Anna McGarrigle_ Martha Wainwright_ Lily Lanken size	1
+		Rufus Wainwright_ Martha Wainwright size	1
+		Martha Wainwright_ Lily Lanken size	1
+		Kate & Anna McGarrigle featuring Loudon_ Martha Wainwright_ Rufus Wainwright size	1
+		Kate & Anna McGarrigle featuring Emmylou Harris size	2
+		Kate & Anna McGarrigle featuring Martha Wainwright_ Rufus Wainwright size	2
+		Kate & Anna McGarrigle_ featuring Loudon Wainwright_ Martha Wainwright_ Rufus Wainwright_ Chaim Tannenbaum size	1
+		Kate & Anna McGarrigle featuring Lily Lanken_ Martha Wainwright size	1
+		Kate & Anna McGarrigle featuring Chaim Tannenbaum_ Lily Lanken size	1
+		Kate & Anna McGarrigle featuring Lily Lanken_ Rufus Wainwright size	2
+		Kate & Anna McGarrigle featuring Martha Wainwright size	1
+		Kate & Anna McGarrigle featuring Chaim Tannenbaum size	3
+		Kate & Anna McGarrigle featuring Rufus Wainwright size	1
+		Kate & Anna McGarrigle featuring Loudon Wainwright_ Rufus Wainwright_ Martha Wainwright_ Chaim Tannenbaum size	1
+		Kate & Anna McGarrigle featuring Loudon Wainwright_ Rufus Wainwright_ Martha Wainwright_ Chaim Tannenbaum_ Lily Lanken_ Dane Lanken_ Sylvan Lanken size	1
+		Kate & Anna McGarrigle featuring Linda Ronstadt size	1
+		Kate & Anna McGarrigle featuring Jane McGarrigle size	1
+		The Be Good Tanyas size	30
+		Hayes Carll size	26
+		Gerard Films / Norman Gerard size	1
+		Devon Sproule size	25
+		Stephan North size	1
+		Wake The Dead size	8
+		1 Giant Leap size	1
+		Eddi Reader size	66
+		Eddie Reader size	1
+		Eddi Reader featuring Kate Rusby with the Royal Scottish National Orchestra_ conducted by Kevin McCr size	1
+		Maddy Prior size	2
+		Jesse Winchester size	52
+		Jolie Holland size	51
+		Cyril Pahinui size	25
+		Cyril Pahinui_ Bob Brozman size	15
+		Tarun Bhattacharya size	1
+		Rachael McShane_ Stu Hanna_ Emily Smith_ Jez Lowe size	1
+		Rachael McShane_ Emily Smith_ Krista Detor_ Karine Polwart size	1
+		Rachael McShane size	11
+		Barry Dransfield size	1
+		Prurient size	1
+		Dave Swarbrick size	32
+		Tony Furtado size	39
+		Tony Furtado And The American Gypsies size	8
+		Karla Bonoff size	41
+		Shawn Camp size	11
+		The Kennedys size	1
+		Deaf Shepherd size	12
+		Tony Evans size	1
+		Josh Ritter size	57
+		Foghorn Stringband size	18
+		Andy M. Stewart size	9
+		Oh Susanna size	2
+		The Wailin' Jennys size	14
+		Ali Farka TourÌ©_ Toumani DiabatÌ© size	11
+		Ulrich MÌ_ller Doppler size	1
+		Ali Farka Toure_ Toumani Diabate size	3
+		Ali Farka TourÌ© & Toumani DiabatÌ© size	1
+		Adrian Legg size	22
+		Jess Klein size	23
+		The Grascals size	27
+		Steve Earle size	32
+		Steve Earle & The Dukes size	6
+		Phil Keaggy size	49
+		Phil Keaggy;Cliff Young;Danielle Young size	1
+		The Weepies size	5
+		Leo Kottke;Michael Gordon size	8
+		Leo Kottke size	34
+		Ferron size	12
+		Chip Taylor size	94
+		Chip Taylor_ Evie Sands size	1
+		Julie Fowlis size	36
+		Julie Fowlis/ James Graham/ Liam ÌÒ Maonlai size	1
+		Julie Fowlis featuring Eddi Reader size	1
+		Julie Fowlis featuring Mary Smith size	2
+		Jeb Loy Nichols size	43
+		Karine Polwart size	37
+		Jesse Colin Young size	1
+		Rory Block size	14
+		London Symphony Orchestra and Leopold Ludwig size	1
+		Anais Mitchell size	3
+		Anais Mitchell [feat. The Haden Triplets] size	3
+		Anais Mitchell [feat. Ben Knox Miller and Justin Vernon] size	1
+		Anais Mitchell [feat. Justin Vernon] size	5
+		Anais Mitchell [feat. Ani DiFranco and Greg Brown] size	1
+		Anais Mitchell [feat. Ani DiFranco] size	2
+		Anais Mitchell [feat. Greg Brown] size	3
+		Anais Mitchell [feat. Michael Chorney] size	2
+		Anais Mitchell [feat. Justin Vernon_ Ani DiFranco and Ben Knox Miller] size	1
+		Tim Van Eyken size	11
+		Clare Burson size	1
+		Tom Russell size	14
+		Tom Russell & Andrew Hardin size	1
+		Ait Challal size	1
+		Pigalle Guitar Ensemble size	1
+		Dolores Keane size	1
+		Kari Bremnes size	2
+		Knut Reiersrud size	1
+		Tom Russell & Iris Dement size	2
+		Iris Dement & Kari Bremnes size	1
+		Iris Dement size	51
+		Sondre Bratland size	1
+		Sondre Bratland & Iris Dement size	1
+		Tom Russell & Dolores Keane size	1
+		Dave Van Ronk size	1
+		Alex de Grassi size	41
+		Alex de Grassi;Paul McCandless size	2
+		Martin Phillipps size	1
+		Key Largo size	1
+		Kathleen Edwards size	32
+		Gerry O'Connor size	2
+		Chris Smither size	26
+		Ricocher size	1
+		Status Quo size	1
+		Trio Bamberg size	1
+		Michael Hedges size	43
+		Kimmie Rhodes size	1
+		Lonesome River Band size	52
+		Sean Watkins size	38
+		Ralph McTell size	14
+		Soweto Gospel Choir size	31
+		Mindy Smith size	49
+		Sara Hickman size	3
+		The Gordons size	9
+		The Gordons / Dizzy Gillespie / Stuff Smith size	1
+		Claire Lynch size	83
+		A Loulia size	1
+		Claire Lynch and the Front Porch String Band size	1
+		Show Of Hands size	77
+		David "Honey Boy" Edwards size	5
+		David "Honeyboy" Edwards size	70
+		Honey Boy Edwards size	1
+		David "Honeyboy" Edwards / Floyd Jones / Kansas City Red / Sunnyland Slim / Big Walter Horton size	2
+		Devendra Banhart size	70
+		Josephine Foster size	1
+		Jeff Lang size	12
+		The Fairfield Four size	48
+		The Nashville Bluegrass Band size	99
+		The Red Clay Ramblers size	37
+		The Red Clay Ramblers with Fiddlin' Al McCanless size	11
+		The Cottars size	10
+		John Wesley Harding size	39
+		Kate Wolf size	37
+		Kate Wolf & The Wildwood Flower size	2
+		Mutual Admiration Society size	10
+		Natalie Merchant size	48
+		Billy Bragg & Wilco Featuring Natalie Merchant size	1
+		Natalie Merchant with The Chieftains size	1
+		Trout Fishing in America size	54
+		Marti Jones size	11
+		Judy Collins size	56
+		Inmates size	1
+		Judy Collins and Eric Andersen size	2
+		Zwoagsang Trellinger-MÌ_rz size	1
+		DJ Deeon size	1
+		People Like You size	1
+		Shawn Phillips size	1
+		Kenneth McKellar size	1
+		keller williams size	100
+		The Avett Brothers size	61
+		Ana MarÌ_a MartÌ_nez - Ignacio Rodes size	1
+		Blue Highway size	56
+		Lindisfarne size	48
+		Ski-King size	1
+		John McCutcheon size	1
+		Mary Black size	61
+		Mary Black Feat. Shane Howard size	1
+		Mary Black Feat. Emmylou Harris & Dolores Keane size	1
+		Mary Black Feat. Seamus Begley size	1
+		Mary Black Feat. Noel Bridgeman size	1
+		Mary Black & General Humbert size	1
+		Rosie Thomas size	33
+		Todd Snider size	36
+		Snider_ Todd size	5
+		John Martyn size	89
+		John Martyn / Paul Kossoff size	1
+		John Martyn / Beverley Martyn size	5
+		Luka Bloom size	92
+		Mark Wynter size	1
+		JACK SAVORETTI size	5
+		Leon Redbone size	79
+		Skyedance size	29
+		Jen Chapin size	13
+		Maurice AndrÌ© size	1
+		Jonell Mosser size	12
+		Mike Marshall & Chris Thile size	19
+		Chick Corea / BÌ©la Fleck size	12
+		Strunz & Farah size	49
+		Alex Cline Ensemble size	1
+		Karan Casey size	64
+		Karen Casey size	1
+		Ferrick_ Melissa size	13
+		Melissa Ferrick size	27
+		Laura Veirs and Saltbreakers size	3
+		Gaelic Storm size	22
+		The O'Neill Brothers size	1
+		Boys Of The Lough size	29
+		Liquid Scarlet size	1
+		Home Of The Lame size	1
+		Patty Larkin size	36
+		Mary Jane Lamond And Group size	1
+		Mary Jane Lamond;Wendy MacIsaac;Ed Woodsworth;Geoff Arsenault;Gordie Sampson;Paddy Moloney;Martin Fay;SeÌÁn Keane;Matt Molloy;Derek Bell;Kevin Conneff size	1
+		Johannes Linstead size	39
+		Open House size	4
+		Le bal accordÌ©on size	1
+		Dave Carter & Tracy Grammer size	11
+		Peggy Seeger size	49
+		Jacquotte RibiÌ¬re-raverlat size	1
+		Livingston Taylor size	12
+		Stefan Grossman and Tokio Uchida size	6
+		Stefan Grossman size	42
+		Vienna Teng size	48
+		Barcelona Constort size	1
+		Donna The Buffalo size	84
+		Scala & Kolacny Brothers size	1
+		Patrick Street size	2
+		Storyhill size	10
+		Hellmouth size	13
+		Hoots & Hellmouth size	10
+		Fionn Regan size	24
+		The Ditty Bops size	29
+		The Burns Sisters size	1
+		Pierce Pettis size	1
+		Larry Sparks & The Lonesome Ramblers size	1
+		Larry Sparks size	29
+		Kim Richey size	39
+		Martin Carthy & Dave Swarbrick size	8
+		Cara Dillon size	50
+		The Flatlanders size	2
+		George Winston size	60
+		Jorge Zapata size	1
+		George Winston;Michael Gordon size	1
+		Linda Montesa size	1
+		R. Crumb And His Cheap Suit Serenaders size	13
+		The Bacon Brothers size	12
+		Kate Campbell size	36
+		Dan Zanes Feat. The Rocket Ship Revue size	1
+		Dan Zanes Feat. Barbara Brousal size	3
+		Dan Zanes Feat. Aggie Decaul And Courin Gibbs size	1
+		Dan Zanes size	28
+		Dan Zanes Feat. Bob Weir size	1
+		Dan Zanes Feat. Cynthia Hopkins size	1
+		Dan Zanes Feat. Yoshi Waki size	1
+		Dan Zanes Feat. Angelique Kidjo size	1
+		Dan Zanes Feat. Philip Glass size	1
+		Dan Zanes Feat. Rankin' Don aka Father Goose size	1
+		Dan Zanes Feat. Lou Reed And The Rubi Theater Company size	1
+		Dan Zanes Feat. Dar Williams size	1
+		Dan Zanes Feat. John Doe size	1
+		Dan Zanes Feat. The Sandy Girls size	2
+		Dan Zanes Feat. Aimee Mann size	1
+		Dan Zanes Feat. Donald Saaf and The Rocket Ship Singers size	1
+		Dan Zanes Feat. Sheryl Crow size	1
+		Dan Zanes Feat. Suzanne Vega size	1
+		Dan Zanes Feat. Rankin' Don And The Rocket Ship Singers size	1
+		Dan Zanes Feat. A Cast Of Thousands!! size	1
+		Coleman Hawkins size	1
+		The Del McCoury Band size	92
+		Del McCoury Band size	3
+		Anne Hills size	1
+		A Hawk And A Hacksaw size	45
+		Pete Seeger size	131
+		The Smallgoods size	1
+		Pete Seeger with Memphis Slim and Willie Dixon size	2
+		Jude Taylor & His Burning Flames size	11
+		Matt Costa size	31
+		Matt Costa / Ane Brun size	1
+		Alice Peacock size	29
+		Jakob Dylan size	22
+		Jakob Dylan featuring Dhani Harrison size	1
+		Danny Barnes size	26
+		Brave Combo size	32
+		Zee Avi size	13
+		Inti Illimani size	27
+		Inti-Illimani size	8
+		The Albion Band size	47
+		The Fairfield Four and NBB size	1
+		R. Carlos Nakai size	92
+		CamanÌ© size	1
+		Carlos Nakai size	6
+		Vizion size	1
+		The Seldom Scene size	50
+		Damien Dempsey size	43
+		Jorge Vercillo size	1
+		Scott Miller & The Commonwealth size	32
+		Maddy Prior & Tim Hart size	13
+		Dala size	16
+		Hank Dogs size	15
+		Buddy Miller size	2
+		Buddy Miller / Julie Miller / Lee Ann Womack size	1
+		Buddy & Julie Miller size	1
+		Tim Easton size	10
+		Sweet Honey In The Rock size	21
+		David Francey size	50
+		Sharon Shannon size	14
+		Sharon Shannon_ The Cartoon Thieves size	2
+		Sharon Shannon_ Imelda May size	1
+		Sharon Shannon_ Shane MacGowan size	1
+		Sharon Shannon_ Carol Keogh size	1
+		Sharon Shannon And The Waterboys size	1
+		Sharon Shannon_ Mundy size	1
+		Bellowhead size	26
+		David Grisman / Tony Rice size	1
+		David Grisman size	1
+		Darden Smith size	84
+		Concordia Chamber Ensemble size	1
+		Ferraby Lionheart size	17
+		Jim Lauderdale size	75
+		Jim Lauderdale/Ralph Stanley & The Clinch Mountain Boys size	1
+		Jim Lauderdale / Ralph Stanley size	1
+		David Rovics size	4
+		Aine Minogue size	1
+		Uncle Earl size	1
+		Al Petteway / Amy White size	26
+		Al Petteway and Amy White size	12
+		Al Petteway & Amy White size	12
+		Peter_ Paul and Mary size	54
+		Peter_ Paul & Mary size	5
+		Peter Yarrow size	3
+		Noel Paul Stookey size	5
+		Karen Matheson And Davey Spillane size	1
+		Karen Matheson size	28
+		Karen Matheson / Phil Cunningham / Donald Shaw size	1
+		Mark Knopfler size	97
+		Will Kimbrough size	45
+		Frank Harte size	1
+		Tom Paxton size	34
+		Jack Williams / Eleanor Williams / David Winters size	1
+		Jack Williams_ Eleanor Williams_ David Winters size	1
+		The Dubliners size	33
+		The Dubliners / Luke Kelly size	2
+		Catie Curtis size	41
+		The King size	1
+		Planxty size	38
+		Sweeney's Men size	13
+		Lal and Norma Warterson size	2
+		The Watersons size	32
+		Watersons size	16
+		Tom Rush size	62
+		Ìçon size	10
+		John Gorka size	42
+		Nara LeÌ£o / Erasmo Carlos size	1
+		Nara LeÌ£o size	24
+		Stephen Bruton size	1
+		Peter Mulvey size	1
+		The Imagined Village size	10
+		Relativity And Group size	1
+		Dick Gaughan size	44
+		Kris Drever size	22
+		June Tabor size	47
+		Erin McKeown size	47
+		Ciaran Tourish_ Dermott McLaughlin_ Seamus Glackin_ Kevin Glackin size	3
+		Ciaran Tourish_ Dermott McLaughlin size	2
+		Ciaran Tourish_ Dermott McLaughlin_ Seamus Glackin_ Kevin Glackin_ Tommy Peoples_ Seamus Gibson size	1
+		The Little Willies size	14
+		Greg Laswell size	35
+		Cherry Ghost size	21
+		The Felice Brothers size	39
+		Robin Williamson size	46
+		Christy Moore size	59
+		Altan size	39
+		Mairead Ni Mhaonaigh & Altan size	1
+		Kathryn Williams size	20
+		KathrynWilliams size	21
+		Williams_ Kathryn size	9
+		The String Cheese Incident size	89
+		Chavela Vargas size	1
+		Po' Girl size	28
+		Cathy Fink & Marcy Marxer size	1
+		Cheryl Wheeler size	15
+		The Oyster Band size	6
+		Oysterband size	37
+		Shanghai Lily Dublin size	1
+		Oysterband with Brett Sparks size	2
+		Oysterband with Eliza Carthy size	3
+		Oysterband with Steve Knightley & June Tabor size	1
+		Oysterband with June Tabor size	2
+		Oysterband with Steve Knightley size	1
+		Oysterband with Eliza Carthy_ The Handsome Family_ Ben Ivitsky_  James O'Grady_ Show of Hands_ June size	1
+		The Chieftains;SeÌÁn Keane;CiarÌÁn Mordaunt;Derek Bell;Martin Fay;Kevin Conneff;Matt Molloy;Paddy Moloney size	1
+		The Chieftains;Kevin Conneff size	3
+		The Chieftains;Derek Bell;Martin Fay;SeÌÁn Keane;Kevin Conneff;Matt Molloy;Paddy Moloney size	1
+		The Chieftains;Martin Fay (on Sliabh Geal gCua na FÌ©lie) size	1
+		The Chieftains;Nanci Griffith size	3
+		The Chieftains size	51
+		The Chieftains;Roger Daltrey size	1
+		The Chieftains;Jean Butler size	1
+		The Chieftains;Matt Molloy size	1
+		The Chieftains;Chet Atkins;David Hungate size	1
+		The Chieftains;David Hungate;Chet Atkins size	1
+		The Chieftains;Colin James size	1
+		The Chieftains;Willie Nelson size	1
+		The Chieftains;Ricky Skaggs;Jeff Hanna;Emmylou Harris;Jimmy Ibbotson;Keith Edwards;Chet Atkins;BÌ©la Fleck size	1
+		The Chieftains;Ricky Skaggs size	3
+		The Chieftains;Emmylou Harris size	1
+		The Chieftains;Nolwenn Monjarret size	1
+		The Chieftains & Sir James Galway size	1
+		The Chieftains Featuring Ry Cooder / Los Cenzontles / Banda de Gaita de BatallÌ_n / L.A. Juvenil / Liam Neeson size	1
+		The Chieftains / Ry Cooder size	1
+		The Chieftains / La Negra Graciana size	1
+		The Chieftains Featuring Ry Cooder size	1
+		The Chieftains / Banda de Gaita de BatallÌ_n / Carlos Nunez / Los Cenzontles / L.A. Juvenil / Los Folkloristas size	1
+		The Chieftains;Paddy Moloney size	1
+		The Chieftains;The Corrs size	1
+		The Chieftains;Joni Mitchell size	1
+		The Chieftains;Loreena McKennitt size	1
+		The Chieftains;Jackson Browne size	1
+		The Chieftains;Nanci Griffith;Derek Bell;Martin Fay;SeÌÁn Keane;Kevin Conneff;Matt Molloy;Paddy Moloney size	1
+		The Chieftains;Sting size	2
+		The Chieftains with Sinead O'Connor size	3
+		Flowchart size	1
+		Niamh Parsons size	1
+		Niamh Parsons_ Graham Dunne size	1
+		Winifred Horan size	11
+		Tommy Emmanuel size	34
+		Tommy Emmanuel;Chet Atkins size	1
+		Sam Baker size	37
+		Harry Manx size	48
+		The Devil Makes Three size	25
+		Solas size	74
+		Darrell Scott size	4
+		Josh White size	105
+		The Tannahill Weavers size	5
+		Markus Apitius size	1
+		KEVIN WELCH size	2
+		Kevin Welch & Henning Kvitnes size	1
+		Maura O'connell size	47
+		Maura O'Connell & De Danann size	1
+		Rebecca Pidgeon size	15
+		Cherryholmes size	3
+		Roy Harper size	23
+		Chuck Pyle size	1
+		SÌ©amus Egan size	14
+		Seamus Egan size	27
+		Hot Club Of Cowtown size	14
+		Billy Bragg and Wilco size	1
+		Billy Bragg & Wilco size	8
+		Billy Bragg size	1
+		The Waybacks size	38
+		Jonathan Edwards / Will Ferrell size	1
+		Jonathan Edwards size	78
+		Ann Wilson size	6
+		Ann Wilson / Wynonna size	1
+		Ann Wilson / Nancy Wilson size	2
+		Ann Wilson / Gretchen Wilson size	1
+		Ann Wilson / Elton John size	1
+		Ann Wilson / Nancy Wilson / Deana Carter / Wynonna size	1
+		Ann Wilson / Alison Krauss size	1
+		Ann Wilson / k.d. lang size	1
+		Ann Wilson / Rufus Wainwright / Shawn Colvin size	1
+		Ann Wilson;Nancy Wilson size	1
+		Anuna size	2
+		AnÌ_na size	1
+		AnÌ_na / Sara Clancy size	1
+		AnÌ_na / Michael McGlynn / Katie McMahon size	1
+		Luis Miguel size	47
+		Ke$ha size	17
+		Long Ji Li size	1
+		Rocio Durcal size	79
+		RocÌ_o DÌ_rcal size	2
+		Emiliana Torrini size	58
+		Diana King size	38
+		Diana King (Duet With Papa Dee) size	1
+		Camilo Sesto size	82
+		Camilo Sesto;Guillermo Anton;Charly Chausson;Coro size	1
+		Isabel Pantoja size	1
+		Mocha size	4
+		}AMA & RNB WANNABES size	1
+		Ama size	1
+		Sezen Aksu size	35
+		The Bulgarian Voices - Angelite size	1
+		Sarah Benson size	1
+		OV7 size	33
+		Monrose size	56
+		Rafet El Roman size	31
+		Shakespears Sister size	52
+		Siobhan Fahey size	1
+		Shakespears Sister_ Terry Hall size	1
+		Piana size	9
+		Jessica Garlick;United Colours Of Sound size	1
+		Tarkan size	55
+		Tarkan / Adassa size	1
+		Carolyn Rodriguez size	1
+		Tarkan / Wyclef Jean size	1
+		Shaila size	10
+		Ana Gabriel size	66
+		The Radio Dept. size	1
+		Fanny Lu size	12
+		Tam Tam Go! size	67
+		BILA LUCIE size	5
+		Lucie BÌ_lÌÁ size	22
+		Alcazar size	72
+		Alcazar;Londonbeat size	1
+		Marisela size	75
+		Marisela / The Edwin Hawkins Singers size	1
+		Sheila E. size	1
+		Sheila E size	12
+		Alejandro Fernandez size	94
+		Meco size	1
+		Sertab Erener size	6
+		Sertab size	2
+		Onda Vaselina size	16
+		Amanda Miguel size	18
+		Shaila DÌ_rcal size	45
+		Chet Selwood size	1
+		La Cabra Mecanica size	1
+		Acid Kings size	1
+		Acid House Kings size	1
+		David Ruffin size	49
+		Teoman size	30
+		Lucero size	90
+		Lucerito size	7
+		Joan Sebastian size	82
+		Indras size	23
+		Sarah Masen size	42
+		Sin Bandera size	28
+		Sin Bandera Featuring Brian McKnight size	1
+		Sin Bandera Featuring Yung Kuntry size	2
+		Sin Bandera Featuring Vico C size	2
+		Unkle Bob size	14
+		Bruno Barbone size	1
+		La Buena Vida size	40
+		Malachi size	10
+		Patrick Nuo size	48
+		BOA size	3
+		Super M size	2
+		Funkstoerung size	1
+		FunkstÌ_rung size	13
+		Wehbba size	1
+		Layo & Bushwacka! size	18
+		Plemo size	1
+		A.Z. size	1
+		Gigi D'Agostino & Pandolfi size	1
+		Layo & Bushwacka size	1
+		Charles Mingus size	1
+		Hithunters size	1
+		Eight Frozen Modules size	15
+		Simbad size	1
+		Bugz In The Attic size	21
+		Bugz In The Attic ft. Wunmi size	1
+		BB Boogie size	1
+		Reel People size	28
+		Bugz in the Attic / Wunmi size	1
+		Wanderlust size	20
+		Takagi Masakatsu size	31
+		La Fontegara size	1
+		The Rice Field size	1
+		Dub Pistols feat. Ashley Slater size	7
+		Dub Pistols feat. Lindy Layton & Rodney P size	6
+		Mc deejay club size	1
+		Dislocation Dance size	1
+		Dub Pistols feat. TK & JMS size	6
+		Dub Pistols feat. Rodney P & Terry Hall size	9
+		Dub Pistols feat. Terry Hall size	11
+		Dub Pistols feat. Justin Robertson size	1
+		Dub Pistols feat. TK & Ashley Slater size	1
+		Dub Pistols feat. Gregory Isaacs & Rodney P size	1
+		Dub Pistols feat. TK size	2
+		Dub Pistols feat. Rodney P size	4
+		Dub Pistols feat. Red Star Lion & Rodney P size	1
+		Dub Pistols size	7
+		Dub Pistols feat. Blade size	1
+		Courage Brothers size	1
+		Alex Smoke size	56
+		Johann Johannsson size	27
+		DSL size	8
+		Dsl Feat. Lilitoy size	1
+		Sander van Doorn vs Robbie Williams size	4
+		Sander Van Doorn size	15
+		Sander van Doorn presents Purple Haze size	1
+		Alice Russell size	1
+		Buy Now! size	8
+		ShirKhan size	1
+		Novel 23 size	9
+		Bassheads size	4
+		Goapele size	15
+		Goapele featuring Pep Love size	1
+		Goapele featuring Zion I & Casual size	1
+		Sergio Bruni size	1
+		It Hugs Back size	20
+		Gemma Ray size	1
+		Calvin Harris size	50
+		Wollion size	1
+		Sagan size	1
+		Insense size	1
+		Radian size	11
+		Freeland size	45
+		Bassbin Twins size	1
+		Freeland & Brody Dalle size	2
+		Hal Russell NRG Ensemble size	1
+		Raimund Perkmann_ Chor & Orchester Konrad Plaickner size	1
+		Felix Da Housecat size	57
+		Thee Maddkatt Courtship III size	1
+		Felix Da House Cat size	1
+		Housecat size	1
+		Cornell Campbell_ Eternals size	1
+		Bent Bent feat. Panache size	1
+		Bent size	30
+		Boom Bip size	34
+		Boom Bip & Doseone size	17
+		Swine King size	1
+		Boom Bip feat. Ali Lee size	1
+		Mory KantÌ© size	35
+		Mory Kante size	15
+		Mory Kante_ Meiwey size	1
+		Deroussen Fernand size	1
+		Alec Empire size	71
+		Texas Radio Band size	12
+		Svalastog size	28
+		Keith Fullerton Whitman size	3
+		Jean-Philippe Goude size	1
+		Los Punsetes size	1
+		High Contrast size	52
+		High Contrast Vs Logistics size	1
+		High Contrast Feat. Linda Gail Lewis size	1
+		High Contrast Featuring J'Nay size	1
+		Dabrye size	36
+		Dabrye feat. Jay Dee & Phat Kat size	1
+		Dabrye feat. AG size	2
+		Dabrye Feat. Jay Dee And Phat Kat size	1
+		Dabrye & Waajeed size	2
+		David Toop size	46
+		David Toop_Daniel Pemberton size	1
+		David Toop_Bedouin Ascent size	1
+		David Toop & Jon Hassell size	1
+		Fuck Buttons size	16
+		Tony Wilson size	1
+		Brighton Rock size	1
+		Harold Budd_ Clive Wright size	14
+		The London Fox Players size	1
+		Harold Budd size	66
+		The Lonnie Donegan Band size	1
+		Harold B size	5
+		Harold Budd And Chas Smith size	1
+		Harold Budd And Eugene Bowen size	1
+		Red Sun_ SamulNori size	1
+		The Juan MacLean size	48
+		Juan MacLean size	2
+		James Hurt size	1
+		Incendio size	1
+		various artists - toxic size	1
+		Daniel Johnston size	155
+		Deadmau5 / Kaskade size	1
+		Deadmau5 size	59
+		Deadmau5 & Kaskade size	7
+		deadmau5 Feat. Rob Swire size	1
+		Deadmau5 Feat. MC Flipside size	2
+		Deadmau 5 size	1
+		Deadmau5 & Chris Lake size	3
+		Alex Biondo size	1
+		Deadmau5  feat. MC Flipside size	1
+		Hanne Hukkelberg size	34
+		Chikita Violenta size	9
+		Cloud size	8
+		Booty Luv size	30
+		BootyLuv size	1
+		Loscil size	1
+		Jean Valogne size	1
+		Athos Bassissi size	1
+		Barcelona Sax Quartet size	1
+		Madee size	1
+		Vidar Busk size	1
+		Above & Beyond Feat. Zoe Johnston size	2
+		Ian Void size	1
+		Above & Beyond size	9
+		Above & Beyond Featuring Zoe Johnston size	2
+		Above & Beyond vs. Andy Moor size	3
+		Michal Poliak size	1
+		Mnaga A Zdorp size	1
+		Wisdome size	1
+		Audiomatic & Vaishiyas size	1
+		Kandi & Neuman size	1
+		Shaun Baker feat. Maloy size	1
+		taylor deupree + christopher willits size	26
+		Taylor Deupree and Christopher Willits size	5
+		Simian Mobile Disco size	40
+		King Britt (Feat. Rob Life) size	1
+		King Britt size	29
+		Honeyroot size	20
+		Murat Yilmazyildirim size	1
+		The Japanese Popstars size	11
+		Japanese Popstars size	1
+		310 size	50
+		Taylor Deupree size	57
+		Dan King and the Prolz size	1
+		Taylor Deupree and Giuseppe Ielasi size	1
+		Christopher Willits size	21
+		Megan Rochell / Fabolous size	1
+		Plej size	25
+		Francisco Foo size	1
+		Double 99 size	10
+		Murcof size	45
+		Dominus size	1
+		System 7 size	45
+		Homelife size	42
+		Masta Ace Feat. Stricklin size	1
+		Masta Ace size	5
+		Cunninlynguists size	1
+		Chicken Lips size	11
+		Victor Imbres size	1
+		Ekkehard Ehlers size	1
+		Parov Stelar size	7
+		Leela James size	55
+		Mutemath size	38
+		Casiotone For The Painfully Alone size	92
+		Gianni Di Giovanni size	1
+		Kurt Widmann & Sein Orchester size	1
+		Sher Ali _ Mehr Ali Qawwal size	1
+		Nirvana size	1
+		Nostalgia 77 size	40
+		Nostalgia 77 Feat. The Fiction Trio size	1
+		Happy Clappers size	5
+		Lotte Ohm size	1
+		Fennesz size	35
+		Fennesz + Sakamoto size	11
+		Fennesz & Ryuichi Sakamoto size	1
+		Vanderpark size	1
+		Telefon Tel Aviv size	16
+		Jackson Sisters size	12
+		The Jackson Sisters size	10
+		Cocosuma size	4
+		Shindig size	7
+		Mistabishi size	23
+		Nelson Riddle size	37
+		Nelson Riddle;Yves Montand;Barbra Streisand size	1
+		Nelson Riddle And Orchestra size	2
+		Neon Heights featuring Zed J size	1
+		Crazy Penis size	20
+		Lee Coombs size	31
+		Lee Coombs & Christian J size	1
+		Lee Coombs feat. Katherine Ellis size	4
+		23 Skidoo size	76
+		23 SKIDOO FEATURING MAJOR size	1
+		Paul Woolford size	21
+		Paul Woolford & Steve Mac size	2
+		Susanne Brokesch size	1
+		Dubble D size	36
+		GUSTAV MCLOUD size	1
+		Aqua Bassino size	14
+		Silver City size	20
+		Mr Hudson & The Library size	13
+		Jim O'Rourke size	2
+		Fragile State size	44
+		Freemasons size	25
+		Freemasons / Sophie Ellis-Bextor size	2
+		Milk & Sugar size	1
+		Freemasons Feat. Bailey Tzuke size	1
+		Nik P. size	1
+		Freemasons Feat. Amanda Wilson size	1
+		Disco Freaks size	1
+		Freemasons ft Amanda Wilson size	2
+		Foggy size	3
+		Stevie Nicks size	1
+		Deep Dish size	29
+		Deep Dish;Richard Morel;Brian Transeau size	1
+		Deep Dish;Mr Nader Majd size	1
+		Deep Dish;Walter Tates;David Bach size	1
+		Zeena Parkins size	1
+		Deep Dish Featuring Stevie Nicks size	1
+		Baron Titus size	1
+		Deep Dish feat. Stevie Nicks size	1
+		Lucy Pearl size	21
+		LUCY PEARL FEATURING SNOOP DOGG AND Q-TIP size	1
+		Burnt Friedman size	14
+		Reel People Feat. Tony Momrelle & Imaani size	2
+		Shik Stylko & Virginia HÌ_gl size	1
+		Reel People Feat. Omar size	2
+		Reel People Feat. Nathan Haines size	3
+		Reel People Feat. Tony Momrelle size	2
+		Reel People Feat. Angela Johnson size	1
+		Reel People Featuring Sharlene Hector size	2
+		Reel People feat. Darien size	2
+		Spring Heel Jack size	13
+		I Concur size	12
+		Booka Shade size	96
+		Booka Shade / Yello size	1
+		White Shoes & The Couples Company size	12
+		The Similou size	8
+		Brownstone size	26
+		Coco Electrik size	38
+		Roy Montgomery size	48
+		love like blood size	1
+		K7 size	13
+		Funk D'Void size	44
+		Funk D' Void size	3
+		Funk D'Void Vs Chicco Secci size	4
+		Eagles Of Death Metal size	43
+		Boys Noize size	58
+		Boys Noize / Boys Noize size	1
+		Jean RenÌ© size	1
+		Enik size	1
+		More Fire Crew size	11
+		More Fire Crew / Knowledge size	1
+		More Fire Crew / N'jay size	1
+		More Fire Crew / Dizzee Rascal size	1
+		More Fire Crew / Maxwell D. / Wiley size	1
+		More Fire Crew / P / Jookie Mundo / Million Dollar Dream size	1
+		Sylvain Chauveau size	33
+		Stateless size	41
+		Kim HiorthÌüy size	2
+		Kim Hiorthoy size	1
+		Johnny Flynn & the Sussex Wit size	1
+		DT8 Project size	16
+		DT8 Project Feat. Andrea Britton size	2
+		Karl Eliasberg size	1
+		Alva Noto + Ryuichi Sakamoto size	4
+		Chanan Hanspal size	1
+		Roedelius size	2
+		Hans Joachim Roedelius size	1
+		Eric Roberson size	50
+		To Rococo Rot size	27
+		VVAA size	1
+		Polmo Polpo size	14
+		Armand Van Helden size	29
+		Armand Van Helden Featuring Netic From Game Rebellion size	2
+		The Headhunters Featuring Herbie Hancock And N'dea Davenport size	1
+		Armand Van Helden Featuring Tekitha Of Wu-Tang size	1
+		David Smith size	1
+		Armand Van Helden Feat. Team Facelift size	2
+		David Morales W/ Vivan Sessoms size	1
+		Choeur de PrÌ»tres de Sofia size	1
+		Camino De Lobo size	1
+		Surkin size	22
+		Gianluca Motta ft. Molly size	1
+		Gianluca Motta size	4
+		Gianluca Motta / Molly size	1
+		Gianluca Motta / Snap! / NG3 size	6
+		Treasure Fingers size	1
+		Indeep size	1
+		Dj Spooky size	16
+		Jack Dangers size	1
+		DJ D size	1
+		King Tubby Meets The Scientist size	1
+		Saul Williams Feat. DJ Spooky size	1
+		DJ Spooky_ Bill Laswell_ Scanner_ Freeform_ Michael Mayer_ Kurt Schwitters size	1
+		DJ Spooky_ Yoshio Machida_ Vladimir Maiakovski size	1
+		DJ Spooky_ DJ Grazzhoppa_  Bill Laswell's size	1
+		DJ Spooky_ DJ Wally_ Gertrude Stein size	1
+		DJ Spooky_ Matik size	2
+		DJ Spooky_ Claude Debussy size	1
+		DJ Spooky_ Seefeel size	1
+		DJ Spooky_ Charles Hayward size	1
+		DJ Spooky_ DJ Wally_ Hugo Distler size	1
+		Lloydie & The Lowbites size	1
+		DJ Spooky_ Rob Swift size	1
+		Bruce Ruffin size	1
+		Amel Larrieux size	49
+		Amel Larrieux;+ The Roots size	1
+		Amel Larrieux featuring Mos Def size	1
+		Grovesnor size	14
+		Andrew Pekler size	5
+		Jasper Street Co size	1
+		Enrique Guzman size	1
+		Sub Focus Feat. Culture Shock size	1
+		Sub Focus size	21
+		Samba de Rainha size	1
+		Jhonny Rivera size	1
+		Stonebridge size	21
+		StoneBridge feat. Therese size	6
+		Stonebridge / Therese size	1
+		Wolf Parade size	8
+		Phonophani size	29
+		Koma and Bones size	4
+		Samuel Dilucas size	1
+		Fingathing size	1
+		Matmos size	11
+		Arkham size	1
+		Prefuse 73 size	82
+		OQTO size	1
+		Prefuse 73 feat. Jenny Vasquez size	1
+		Prefuse 73 feat. Mr. Lif size	1
+		Prefuse 73  feat. Babatunde Adebimpe (from T.V. on the Radio) size	1
+		Prefuse-73 size	5
+		Prefuse 73 feat. Mikah 9 size	1
+		Prefuse 73 feat. MF Doof & Aesop Rock size	1
+		Prefuse 73 feat. Rec Center size	1
+		Prefuse 73 feat. Sam Prekop size	1
+		Dave Clarke size	25
+		Yosh size	1
+		Ophiolatry size	1
+		De'lacy size	7
+		De Lacy size	1
+		De Lacy size	1
+		Marco Gee & Delacy size	1
+		London Elektricity size	62
+		Landslide size	1
+		LondonåÊElektricity size	1
+		London Elektricity vs. Robert Owens size	1
+		Diskjokke size	4
+		Diskjokke & Lil'Wolf size	1
+		Foetus size	1
+		Jumbonics size	1
+		Hazard size	49
+		Fat Jon size	43
+		fat jon size	16
+		Daedelus size	46
+		Daedelus featuring TTC size	1
+		Daedelus featuring Hrishikesh Hirway size	1
+		Daedelus featuring Mike Ladd size	1
+		Daedelus Featuring Laura Darling size	1
+		Daedelus Featuring Paperboy and Taz size	1
+		Daedelus featuring MF Doom size	3
+		Daedelus Featuring Erika Rose and Paperboy size	1
+		Daedelus Featuring Om'mas Keith size	1
+		Daedelus Featuring Michael Johnson size	3
+		Pedro Mountains Mummy size	1
+		Scorn size	48
+		Electric Company size	48
+		Linus Loves size	3
+		Linus Loves Feat. Sam Obernik size	4
+		Okeh Wrangers size	1
+		Larry Tee size	27
+		Larry Tee feat. Mel Merio size	3
+		The fFormula size	1
+		Larry Tee feat. Perez Hilton size	6
+		Larry Tee feat. Amanda Lepore size	3
+		Mitchell Akiyama size	29
+		Will Saul size	4
+		Will Saul featuring Ursula Rucker size	2
+		Will Saul & Mike Monday size	1
+		Bearsuit size	1
+		Jimpster size	66
+		Kandi size	14
+		David Guetta Vs Bowie size	1
+		DJ Dizzy size	1
+		Jacinta size	1
+		David Guetta - Steve Angello - Joachim Garraud - SÌ©bastian Ingrosso - Chris Willis size	8
+		TasteXperience size	1
+		David Guetta - JD Davis - Joachim Garraud size	2
+		David Guetta - Chris Willis - Joachim Garraud size	3
+		David Guetta size	4
+		David Guetta - Joachim Garraud - Chris Willis size	2
+		Sommarpojkarna size	1
+		David Guetta Vs The Egg size	1
+		David Guetta Vs. The Egg size	1
+		David Guetta - Akon size	6
+		David Guetta - Wynter size	1
+		David Guetta ft. Kelly Rowland size	1
+		David Guetta - The Egg - Joachim Garraud - Chris Willis size	1
+		David Guetta - Joachim Garraud - Tara McDonald size	1
+		David Guetta Feat. Estelle size	1
+		Thievery Corporation size	91
+		Thievery Corporation feat. Emiliana Torrini size	1
+		The New Alchemy size	1
+		Thievery Corporation feat. Perry Farrell size	1
+		Cherubini-Quartett/Wolfgang Meyer/Dag Jensen/Radovan Vlatkovic/Yasunori Kawahara size	1
+		Thievery Corporation feat. Sister Nancy size	1
+		Atomic Hooligan size	27
+		France Castel size	1
+		Kid 606 size	10
+		Kid606 size	34
+		Haito & Diringer size	1
+		Toni Toolz size	1
+		Kid 606 Vs Dalek size	2
+		The Moldy Peaches size	50
+		Maria Blom size	1
+		Avril - Remix By Laurent Garnier size	1
+		Avril - Remix By Broadcast size	1
+		Avril size	27
+		Avril - Remix By Emilie Simon size	1
+		Avril - Remix By Chloe size	1
+		Avril - Remix By Ana Rago size	1
+		The Mess Hall size	14
+		Audio Bullys size	49
+		Failure size	1
+		Audio Bullys Featuring Suggs size	1
+		Audio Bullys Featuring Roots Manuva & Mr Fox size	1
+		Dirty South size	1
+		Audio Bullys Featuring Nancy Sinatra size	3
+		Klezmer Juice size	1
+		Cham size	22
+		Cham (feat. Majic Massey) size	1
+		Nina Sky size	16
+		Nina Sky / Betty Wright size	1
+		Nina Sky & Cham size	1
+		Nina Sky Feat. Vybz Kartel & Jabba size	1
+		Deadbeat size	20
+		MLZ size	1
+		DJ Deadbeat size	4
+		Tim Deluxe Feat. Ben Onono size	2
+		Tim Deluxe size	23
+		Stereo MCs size	20
+		Stereo MC's size	40
+		Stereo MC's / Erwin Lehn Orchestra size	1
+		Stereo MC's / Cath Coffey size	1
+		The Sunburst Band size	3
+		Rolo Tomassi size	7
+		Kraak & Smaak size	33
+		Kraak & Smaak feat. U-Gene size	4
+		Kraak & Smaak feat. Dez size	1
+		Philippe Rochard meets Nu-Pulse size	1
+		Kraak & Smaak feat. Bobby Nio size	5
+		Jack Trash feat. Gwen Matthews size	1
+		Kraak & Smaak feat. Ben Westbeech & Fredde Le Grand size	1
+		Kraak & Smaak feat. Ben Westbeech size	2
+		Skeewiff size	1
+		Joey Negro size	28
+		Motion Control size	1
+		Blue Six size	29
+		Blue 6 size	3
+		The Abstractions size	1
+		MNEMIC size	54
+		Aborted size	69
+		Carnivore size	26
+		The Subtle Way size	10
+		Divine Heresy size	10
+		Moonspell size	84
+		RAUNCHY size	38
+		Dog Eat Dog size	29
+		Thierry Noritop & Daniel Finot size	1
+		Nevermore size	95
+		Beyond Twilight size	17
+		Samael size	51
+		Dub War size	59
+		Dub War Vs Panacea size	1
+		Orphaned Land size	33
+		Trivium size	62
+		For The Fallen Dreams size	12
+		Pagan's Mind size	34
+		Pagans Mind size	11
+		Haste The Day size	50
+		Asphyx size	60
+		Bloodjinn size	18
+		Morgion size	18
+		Rotting Christ size	53
+		Body Count size	48
+		Behemoth size	96
+		Eluveitie size	62
+		Becoming The Archetype size	34
+		Brain Drill size	16
+		The Autumn Offering size	40
+		Aghora size	13
+		Overkill size	112
+		Izah size	2
+		THERION size	85
+		Amen Corner size	48
+		Between The Buried And Me size	63
+		Between The Buried & Me size	2
+		Bloodsimple size	24
+		bloodsimple (featuring Chad Gray) size	1
+		Devanic size	16
+		DEW-SCENTED size	46
+		Diablo Swing Orchestra size	24
+		Stick To Your Guns size	14
+		Tapes n Tapes size	1
+		Ion Dissonance size	19
+		August Burns Red size	48
+		Soilwork size	99
+		The Musicmaker size	1
+		Voivod size	80
+		Sirenia size	22
+		Kingdom of Sorrow size	11
+		Rose Funeral size	21
+		Biohazard size	115
+		Biohazard / Sticky Fingaz size	1
+		John Campbell size	19
+		Persuader size	13
+		Accomplice size	12
+		John Stevens size	29
+		John Stevens (Featuring Erika Christensen) size	1
+		Misha Mengelberg/Piet Noordijk Quartet size	3
+		Misha Mengelberg size	8
+		Joe McPhee size	6
+		Joe McPhee / John Snyder size	4
+		Azymuth size	48
+		Azymuth featuring Vanessa Freeman size	1
+		John Abercrombie_ Mark Feldman_ Joey Baron_ Marc Johnson size	9
+		John Abercrombie size	8
+		John Abercrombie_ Mark Feldman_ Marc Johnson_ Joey Baron size	3
+		John Abercrombie_ Dave Holland_ Jack DeJohnette size	6
+		John Abercrombie_ Ralph Towner size	1
+		John Abercrombie / Peter Erskine / Bob Mintzer / John Patitucci size	5
+		John Abercrombie and John Ruocco size	9
+		Paddy Milner size	14
+		Arve Henriksen_ Anna Maria Friman_ Jan Bang_ Audun Kleive_ Erik HonorÌ©_ StÌ´le StorlÌükken size	1
+		Arve Henriksen_ Jan Bang size	1
+		Arve Henriksen_ Jan Bang_ Erik HonorÌ© size	1
+		Arve Henriksen size	20
+		Arve Henriksen & Elling Vanberg size	20
+		Royal Scots Dragoon Guards size	1
+		Hank Jones size	73
+		Traubeli WeiÌÙ Enemble size	1
+		Hank Jones_ Red Mitchell size	4
+		Hank Jones_ Ilya Lushtak size	2
+		Hank Jones_ Marion Cowings size	4
+		Hank Jones / Oliver Nelson size	1
+		Hank Jones_ James Moody_ Bob Brookmeyer_ Richard Davis_ Benny Golson_ Jimmy Owens_ Mickey Roker_ Frank Wess size	7
+		Hank Jones_ Mads Vinding_ Billy Hart size	8
+		Charlie Haden size	52
+		Charlie Haden_ Carla Bley_ Don Cherry_ Sharon Freeman_ Mick Goodrick_ Jack Jeffers_ Michael Mantler_ size	5
+		Charlie Haden / Tanya Haden / Rachel Haden size	1
+		Charlie Haden / Tanya Haden size	1
+		Charlie Haden / Bruce Hornsby size	1
+		Charlie Haden / Vince Gill size	1
+		Charlie Haden / Elvis Costello size	1
+		Charlie Haden / Rosanne Cash size	1
+		Charlie Haden / Petra Haden / Tanya Haden / Rachel Haden size	1
+		Charlie Haden / Carlos Paredes size	5
+		Charlie Haden / Ricky Skaggs and The Whites size	1
+		Charlie Haden & Chris Anderson size	8
+		Charlie Haden / Paul Motian / Gonzalo Rubalcaba size	5
+		Charlie Haden / Paul Motian / Paul Bley size	5
+		Charlie Haden / Don Cherry / Ed Blackwell size	3
+		Kenny Werner size	71
+		Kenny Werner Trio size	6
+		Akita Mata size	1
+		Kenny Werner / Toots Thielemans size	4
+		Toots Thielemans / Kenny Werner size	8
+		James Hunter size	28
+		Chris Bowden size	10
+		Peter Brotzmann size	5
+		Peter BrÌ_tzmann_ Fred Van Hove_ Han Bennink size	10
+		Peter BrÌ_tzmann size	4
+		Peter BrÌ_tzman / Han Bennink size	3
+		The Peter BrÌ_tzmann Octet size	1
+		Natalie Cole size	111
+		Natalie Cole / Diana Krall size	1
+		Natalie Cole & Peabo Bryson size	6
+		John Scofield size	44
+		Bim Sherman size	7
+		Erik Truffaz size	56
+		Erik Truffaz - Malcolm Braff - Indrani Mukherjee - Apurba Mukherjee size	1
+		Erik Truffaz - Murcof size	3
+		Erik Truffaz - Sly Johnson - Sly Johnson size	7
+		Erik Truffaz - Sly Johnson size	1
+		Erik Truffaz - Malcolm Braff size	1
+		Hugh Hopper size	23
+		Carol Kidd size	1
+		Mats Gustafsson_ Barry Guy size	7
+		Bugge Wesseltoft / Sidsel Endresen size	5
+		Bugge Wesseltoft size	27
+		Jeff Healey size	21
+		Marc Ribot size	31
+		Triangle size	48
+		The Triangle size	15
+		Triangle - StÌ©phane Grappelli size	1
+		John Butcher size	17
+		Rahsaan Roland Kirk & Al Hibbler size	2
+		Rahsaan Roland Kirk size	48
+		Randy Brecker size	21
+		Jono El Grande size	22
+		John Surman_ Jack DeJohnette size	9
+		John Surman_ John Abercrombie_ Drew Gress_ Jack DeJohnette size	3
+		John Surman_ Chris Laurence_ Trans4mation size	3
+		John Surman_ Jack DeJohnette_ London Brass size	1
+		Vienna Symphony Orchestra size	1
+		John Surman size	18
+		John Surman_ John Taylor_ Salisbury Festival Chorus_ Howard Moody size	3
+		The James Taylor Quartet size	23
+		James Taylor Quartet size	48
+		Los Centellas size	1
+		Carleen Anderson size	56
+		Carleen Anderson / Omar size	1
+		Bill Bruford's Earthworks size	7
+		Crazy P size	1
+		All Girl Summer Fun Band size	1
+		Rabih Abou-Khalil size	39
+		Rabih Abou-Khalil / Joachim KÌ_hn / Jarrod Cagwin size	3
+		Rabih Abou-Khalil_ Selim Kusur_ Glen Velez_ Setrak Sarkissian size	3
+		Rabih  Abou-Khalil size	3
+		Joshua Redman size	59
+		Joshua Redman Quartet size	1
+		US Air Force Band size	1
+		Joshua Redman And Brad Mehldau size	1
+		Kammerflimmer Kollektief size	15
+		Roland Van Campenhout size	1
+		Jim Hall / Ron Carter size	3
+		Jim Hall / Ron Carter Duo size	1
+		Jim Hall size	46
+		Conjure size	1
+		Solveig Slettahjell size	40
+		Robben Ford size	76
+		Robben Ford / Susan Tedeschi size	1
+		Detroit Experiment size	14
+		Hermeto Pascoal size	25
+		Hermeto size	1
+		Dianne Reeves size	35
+		V-Ger size	1
+		Lorrich size	1
+		Richard "Groove" Holmes size	76
+		Richard Holmes size	9
+		Richard 'Groove' Holmes & Jimmy Witherspoon size	3
+		Eddie Henderson size	1
+		Richard "Groove" Holmes/Gene Ammons size	2
+		Richard size	1
+		Richard Groove Holmes_ Jimmy McGriff size	1
+		Charles Earland size	23
+		Eric Alexander_ Charles Earland size	1
+		Charles Earland / Boogaloo Joe Jones size	1
+		Liberty Ellman size	19
+		Dr. Lonnie Smith size	11
+		Dr. Lonnie Smith_ Peter Bernstein_ Billy Drummond size	8
+		Michael Brecker size	60
+		James Taylor and Michael Brecker size	1
+		Michael Brecker / Lisa Fischer size	1
+		Rava - Galliano - Marcotulli.. size	4
+		Enrico Rava/Ran Blake size	4
+		Enrico Rava_ Franco D'Andrea size	4
+		Enrico Rava size	23
+		Enrico Rava_ Stefano Bollani_ Mark Turner_ Larry Grenadier_ Paul Motian size	6
+		Enrico Rava_ Phil Woods_ Lee Konitz size	1
+		Sidsel Endresen & Bugge Wesseltoft size	20
+		Evan Parker size	24
+		Evan Parker_ Paul Dunmall_ Barry Guy_ Tony Levin size	3
+		Evan Parker_ Barry Guy_ Lawrence Casserley size	6
+		Michael J. Sheehy size	1
+		Barry Wilson size	1
+		Evan Parker / Ned Rothenberg size	5
+		Altemar Dutra size	1
+		Evan Parker & Peter A.Schmid size	6
+		Jimmy Giuffre size	40
+		Jimmy Giuffre_ Paul Bley_ Steve Swallow size	6
+		Jimmy Guiffre size	1
+		Paul Bley size	1
+		Benevento Russo Duo size	4
+		Benevento/Russo Duo size	1
+		Benevento / Russo Duo size	7
+		GROVER WASHINGTON_ JR. size	58
+		Grover Washington Jr. size	26
+		Grover Washington_ Jr.;Orchestra of St. Luke's size	7
+		Grover Washington_ Jr. featuring Lisa Fischer size	1
+		Grover Washington_ Jr. featuring Jean Carne size	1
+		Grover Washington size	1
+		Two Banks Of Four size	10
+		Terje Rypdal size	16
+		Terje Rypdal_ BjÌürn Kjellemyr_ Audun Kleive size	1
+		Terje Rypdal_ TorbjÌürn Sunde_ Brynjulf Blix_ Sveinung HovensjÌü_ Svein Christiansen size	6
+		Terje Rypdal_ Inger Lise Rypdal_ Eckehard Fintl_ Jan Garbarek_ Bobo Stenson_ Arild Andersen_ Jon Chr size	2
+		Jacob Young size	26
+		Paul Rutherford_ Philipp Wachsmann _ Barry Guy size	4
+		Paul Rutherford size	1
+		Susanna And The Magical Orchestra size	31
+		Bireli Lagrene size	9
+		BirÌ©li LagrÌ¬ne size	78
+		Henri Salvador size	1
+		Bireli Lagrene Ensemble size	1
+		The Nels Cline Singers size	21
+		Stevie Ray Vaughan And Double Trouble size	74
+		Stevie Ray Vaughan size	18
+		Stevie Ray Vaughan & Double Trouble size	1
+		Stevie Ray Vaughan;Double Trouble size	6
+		Grachan Moncur III size	17
+		Grachan Moncur III / Roswell Rudd / Andrew Cyrille / Archie Shepp / Reggie Workman / Amiri Baraka size	6
+		Dave Douglas size	21
+		James Carter size	67
+		James Carter [Featuring Jef Lee Johnson_ Marc Ribot_ Jamaaladeen Tacuma And G. Calvin Weston] size	4
+		Curtis Stigers size	97
+		The Thing size	1
+		Archie Shepp size	50
+		Archie Shepp / William Kunstler size	2
+		Archie Shepp / Marion Brown size	1
+		Archie Shepp Quartet_ Annette Lowman size	1
+		Archie Shepp_ Napoleon Maddox_ Oliver Lake_ Hamid Drake_ Joe Fonda_ Cochemea Gastelum size	3
+		Archie Shepp / Mondo Grosso size	1
+		Ulf Wakenius size	25
+		Peter Cincotti size	40
+		Freddie Hubbard size	102
+		Freddie Hubbard_ Art Blakey size	4
+		Freddie Hubbard_ Curtis Fuller And Yusef Lateef size	1
+		Freddie  Hubbard size	1
+		Carla Bley size	6
+		The Carla Bley Band size	6
+		Jazz Composer's Orchestra size	2
+		The Carla Bley Big Band size	2
+		Carla Bley_ Andy Sheppard_ Steve Swallow size	2
+		Jeff Gauthier Goatette size	10
+		Joe Zawinul size	47
+		Joe Zawinul & Australian All Stars size	2
+		Joe Zawinul & Salif Keita size	1
+		Dave Holland size	14
+		Dave Holland_ Chris Potter_ Robin Eubanks_ Steve Nelson_ Billy Kilson size	23
+		Dave Holland_ Steve Coleman_ Kevin Eubanks_ Marvin Smitty Smith size	1
+		DJ Adlib size	1
+		Marilyn Crispell size	42
+		Ralph Towner_ Gary Peacock size	5
+		Ralph Towner size	42
+		Ralph Towner_ Peter Erskine size	4
+		Silje Nergaard size	47
+		Art Blakey size	62
+		Art Blakey & The Jazz Messengers size	1
+		Art Blakey & Thelonius Monk size	1
+		Art Blakey / The Jazz Messengers size	6
+		Art Blakey & Paul Chambers size	1
+		Herbie Nichols size	6
+		Art Blakey & His Jazz Messengers size	2
+		Art Blakey's Jazz Messengers size	4
+		JOHN COLTRANE size	1
+		Art Blakey And The Jazz Messengers size	3
+		Art Blakey_ Jazz Messengers size	1
+		Branford Marsalis;Harry Connick_ Jr. size	1
+		Branford Marsalis size	52
+		Branford Marsalis;Orpheus Chamber Orchestra size	5
+		Branford Marsalis;The Dirty Dozen Brass Band size	1
+		David S. Ware / Matthew Shipp / William Parker / Guillermo E. Brown size	14
+		David S. Ware size	12
+		David S. Ware feat. Joe Morris_ William Parker_ Warren Smith size	6
+		David S. Ware_ Matthew Shipp_ William Parker_ Susie Ibarra size	1
+		David S. Ware / Matthew Shipp / William Parker / Susie Ibarra size	6
+		Rigmor Gustafsson size	12
+		Rigmor Gustafsson & Jacky Terrasson Trio size	1
+		Gary Burton size	35
+		Gary Burton / Jay Leonhart / Terry Clarke / Joe Beck size	11
+		Chick Corea_ Gary Burton size	1
+		Gary Burton_ Chick Corea size	7
+		Gary Burton / Chick Corea / Roy Haynes / Dave Holland / Pat Metheny size	5
+		Gary Burton And Stephane Grapelli size	6
+		Gary Burton / Pat Metheny / Steve Swallow / Antonio SÌÁnchez size	7
+		Gary Burton / Steve Swallow / Pat Metheny / Antonio SÌÁnchez size	1
+		Gary Burton_ Makoto Ozone_ Steve Swallow_ Mike Hyman size	1
+		Gary Burton - Polo OrtÌ_ Quartet - Orquesta SinfÌ_nica de TenerÌ_fe size	3
+		Gary Burton - Polo OrtÌ_ size	1
+		Gary Burton / Makoto Ozone size	7
+		Chris Botti size	71
+		Chris Botti;Paula Cole size	1
+		Chris Botti; Vocal by Chris Botti size	1
+		Chris Botti / Andrea Bocelli size	1
+		Karaoke size	1
+		Chris Botti (featuring Shawn Colvin) size	1
+		Chris Botti / Edie Brickell size	1
+		Chris Botti / The Blue Nile size	1
+		Chris Botti / Jonatha Brooke size	1
+		Chris Botti featuring Steven Tyler size	1
+		Chris Botti featuring Gladys Knight size	1
+		Chris Botti featuring Paula Cole size	1
+		Chris Botti featuring Rosa Passos size	1
+		Chris Botti featuring Jill Scott size	1
+		Chris Botti featuring Paul Buchanan size	1
+		Chris Botti featuring Sting size	1
+		Stacey Kent size	49
+		Eric Dolphy size	58
+		The Latin Jazz Quintet / Eric Dolphy size	1
+		Eric Dolphy / Booker Little size	3
+		Clare Teal size	49
+		Chris Bailey size	1
+		Sticks & Stones size	39
+		Tord Gustavsen_ Harald Johnson_ Jarle Vespestad size	13
+		Tord Gustavsen_ Harald Johnsen_ Jarle Vespestad size	23
+		Elliot Sharp size	6
+		Elliott Sharp size	19
+		Elliott Sharp_ Einad Abu-Kaf_ Mohammed Sync size	2
+		Moondog Jr. size	1
+		Elliott Sharp`s Terraplane size	6
+		A Certain Ratio size	1
+		Kenny Garrett size	50
+		The Bad Plus size	44
+		Reid Anderson / Ethan Iverson / David King size	7
+		Eugene Chadbourne size	28
+		Eugene Chadbourne and Jimmy Carl Black size	12
+		Eugene Chadbourne / Andrea Centazzo size	7
+		Charlie Hunter size	42
+		CHARLIE HUNTER WITH LEON PARKER size	3
+		Junior Reid size	1
+		Charlie Hunter Featuring Norah Jones size	1
+		The Nashville Riders size	2
+		Charttraxx Karaoke size	1
+		Black Lace size	1
+		Karaoke Star Explosion size	1
+		Egberto Gismonti size	74
+		Paola Dipietromaria size	1
+		Egberto Gismonti / Academia De DanÌ_as size	2
+		Steve Lacy size	30
+		Steve Lacy / Don Cherry size	5
+		Jeannot Sossou size	1
+		Don Cherry & Ornette Coleman size	1
+		Pat Metheny size	74
+		Pat Metheny / Charlie Haden size	6
+		Pat Metheny Group size	3
+		Pat Metheny/Brad Mehldau size	3
+		Pat Metheny / Larry Grenadier / Brian Blade size	1
+		Pat Metheny_ Lyle Mays_ Mark Egan_ Dan Gottlieb size	2
+		Pat Metheny_ Charlie Haden_ Billy Higgins size	6
+		Pat Metheny/Ornette Coleman size	13
+		Sonny Rollins Trio size	1
+		Pat Metheny_ Lyle Mays_ Eberhard Weber_ Dan Gottlieb size	2
+		Motorpsycho size	19
+		Motorpsycho Feat. Jello Biafra size	1
+		Ray J size	1
+		Les McCann size	1
+		Les McCann & Eddie Harris size	2
+		Fourplay size	78
+		Fourplay (Featuring Chaka Khan And Nathan East) size	1
+		Fourplay (Featuring Take 6) size	1
+		Jane Monheit size	42
+		Jane Monheit / Toots Thielemans size	1
+		Jane Monheit / Ivan Lins size	1
+		Jane Monheit / Sergio Mendes size	1
+		Jane Monheit featuring Michael Buble size	1
+		Scorch Trio size	12
+		Tomasz Stanko_ Bobo Stenson_ Anders Jormin_ Tony Oxley_ Tomasz Stanko_ Bobo Stenson_ Anders Jormin_ size	1
+		Tomasz Stanko_ Bernt Rosengren_ Joakim Milder_ Bobo Stenson_ Palle Danielsson_ Jon Christensen_ Terj size	1
+		Jean-Yves Thibaudet size	33
+		Jean-Yves Thibaudet / Baltimore Symphony Orchestra / Marin Alsop size	5
+		Jean-Yves Thibaudet / Gewandhausorchester Leipzig / Herbert Blomstedt size	6
+		Eri EsittÌ_jiÌ_ size	3
+		Jean-Yves Thibaudet / The Cleveland Orchestra / Vladimir Ashkenazy size	2
+		London Symphony Orchestra size	29
+		London Symphony Orchestra;Michael Tilson Thomas size	5
+		London Symphony Orchestra;Isaac Stern size	1
+		London Symphony Orchestra/AndrÌ© Previn size	11
+		London Symphony Orchestra and Sixten Ehrling size	2
+		London Symphony Orchestra / Claudio Abbado size	1
+		London Symphony Orchestra / Sir Arthur Bliss size	1
+		London Symphony Orchestra / Pierre Monteux size	4
+		London Symphony Orchestra / George Szell size	1
+		Wordsworth size	1
+		London Symphony Orchestra and Harold Farberman size	2
+		London Symphony Orchestra/Antonio Pappano size	1
+		London Symphony Orchestra/Krzysztof Penderecki size	1
+		London Symphony Orchestra / Valery Gergiev size	4
+		London Symphony Orchestra_ Florence Austral_ Edith Furmedge_ Bessie Jones size	1
+		Barry Wordsworth_ London Symphony Orchestra (LSO)_ Camille Saint-SaÌÇns size	3
+		LONDON SYMPHONY ORCHESTRA + VA size	1
+		London Symphony Orchestra/Kent Nagano size	1
+		London Symphony Orchestra/Ida Haendel/Douglas Cummings/AndrÌ© Previn size	1
+		London Symphony Orchestra_ Geoffrey Simon_ Margaret Fingerhut size	1
+		London Symphony Orchestra;John Williams size	1
+		London Symphony Orchestra / Stanley Black size	1
+		Vittorio Fraja size	1
+		Christopher O'Riley size	48
+		The Academy of St. Martin in the Fields / Sir Neville Marriner size	16
+		The London Fox Orchestra size	1
+		Academy of St Martin-in-the-Fields/Sir Neville Marriner size	7
+		The Academy of St. Martin in the Fields / Thurston Dart / Sir Neville Marriner size	6
+		The Academy of St. Martin in the Fields / Sir Neville Marriner / Thurston Dart size	1
+		The Academy of St. Martin in the Fields / Academy of St. Martin in the Fields Chorus / Sir Neville Marriner size	1
+		Academy of St Martin-in-the-Fields/Gavin Greenaway/London Voices/Terry Edwards/Boys of Magdalen College Choir_ Oxford/Boys of King's College Choir_ Cambridge/Kate Royal/Colm Carey/Mark Law size	1
+		Academy Of St Martin In The Fields size	3
+		Sir Neville Marriner/Academy of St Martin-in-the-Fields size	1
+		The Academy of St. Martin-in-the-Fields / The Bach Choir & The Philharmonia Orchestra size	1
+		Academy/Marriner size	2
+		David Zinman size	53
+		Christopher Rouse size	3
+		David Zinman;Philharmonia size	1
+		David Zinman;Pittsburgh Symphony Orchestra size	8
+		Henryk Gorecki size	19
+		Elmer Iseler Singers_ Elmer Iseler size	1
+		TJ Cases size	1
+		Christopher Gordon size	1
+		Luciano Berio size	6
+		Osmo Vanska size	1
+		Evgeny Kissin/London Symphony Orchestra/Sir Colin Davis size	1
+		Evgeny Kissin size	45
+		Jerome Rose size	1
+		Evgeny Kissin/Philharmonia Orchestra/Vladimir Ashkenazy size	7
+		Yevgeni Kissin (piano) size	11
+		Evgeny Kissin;Seiji Ozawa size	1
+		Martha Argerich / Radio-Symphonie-Orchester Berlin / Riccardo Chailly size	1
+		Martha Argerich / Mischa Maisky / Nelson Freire size	1
+		Martha Argerich / Symphonieorchester des Bayerischen Rundfunks / Kyril Kondrashin size	1
+		Martha Argerich size	36
+		Martha Argerich/Heinz Wallberg/Concertgebouworkest size	1
+		Martha Argerich/Cristina Marton size	2
+		Martha Argerich/Kathia Buniatishvili/Dora Schwarzberg/Nora Romanoff-Schwarzberg/Lyda Chen/Jorge Andres Bosso/Enrico Fagone size	1
+		Martha Argerich/Alexander Verdernikov/Orchestra della Svizzera Italiana size	1
+		Martha Argerich/Mauricio Vallina size	2
+		Martha Argerich/Renaud CapuÌ_on/Lida Chen/Gautier CapuÌ_on size	2
+		Martha Argerich/Piotr Anderszewski size	2
+		Martha Argerich/Sergei Nakariakov size	2
+		Martha Argerich/Akane Sakai size	1
+		Martha Argerich/Dora Schwarzberg/Renaud CapuÌ_on/Nora Romanoff-Schwarzberg/Mark Dobrinskji size	2
+		Martha Argerich/Renaud CapuÌ_on size	1
+		La NiÌ±a de los Peines size	1
+		Martha Argerich/Charles Dutoit/Orchestre Symphonique de MontrÌ©al size	2
+		Martha Argerich / Mikhail Pletnev size	3
+		Katherine Jenkins size	46
+		Katherine Jenkins [with Amaury Vassili] size	1
+		Katherine Jenkins / Steffan Hughes size	1
+		Katherine Jenkins / Crouch End Festival Chorus size	1
+		Sandrine size	51
+		Dietmar Schwalke_ Alexander Malter size	1
+		Estonian Philharmonic Chamber Choir size	8
+		Arvo PÌ_rt size	1
+		The Shore size	18
+		Tin Hat size	1
+		Murray Perahia size	72
+		Murray Perahia;Members of the Amadeus Quartet size	1
+		Royal Philharmonic Orchestra/Sir Thomas Beecham size	1
+		Murray Perahia;Members of the English Chamber Orchestra size	4
+		Murray Perahia;English Chamber Orchestra size	23
+		Francisco Cuenca - JosÌ© Manuel Cuenca size	1
+		Murray Perahia;Sir Colin Davis;Symphonie Orchester des Bayerischen Rundfunks size	4
+		EscolanÌ_a de Montserrat size	1
+		Heiner Goebbels size	44
+		Heiner Goebbels_ Alfred 23 Harth size	4
+		Sir Charles Mackerras/Prague Chamber Orchestra size	1
+		Sir Charles Mackerras;Emanuel Ax;Orchestra of the Age of Enlightenment;Catherine Mackintosh size	1
+		Sir Charles Mackerras/Joan Rodgers/Della Jones/Peter Bronder/Bryn Terfel/Royal Liverpool Philharmonic Choir/Royal Liverpool Philharmonic Orchestra/Ian Tracey/Malcolm Stewart size	1
+		Sir Charles Mackerras;The Hanover Band;Andrea Rost;London Voices size	14
+		Sir Charles Mackerras/Scottish Chamber Orchestra/Barbara Frittoli size	1
+		Sir Charles Mackerras/Scottish Chamber Orchestra/Edinburgh Festival Chorus size	5
+		Sir Charles Mackerras/Scottish Chamber Orchestra/Lorraine Hunt Lieberson/Lisa Milne size	1
+		Sir Charles Mackerras/Scottish Chamber Orchestra/Ian Bostridge/Lorraine Hunt Lieberson size	3
+		Sir Charles Mackerras/Scottish Chamber Orchestra/Ian Bostridge size	1
+		Sir Charles Mackerras/Scottish Chamber Orchestra/Anthony Rolfe Johnson size	2
+		Sir Charles Mackerras/Scottish Chamber Orchestra size	3
+		Sir Charles Mackerras/Scottish Chamber Orchestra/Lisa Milne size	6
+		Sir Charles Mackerras/Scottish Chamber Orchestra/Lorraine Hunt Lieberson size	1
+		Sir Charles Mackerras/Scottish Chamber Orchestra/Ian Bostridge/Barbara Frittoli size	1
+		Sir Charles Mackerras/Scottish Chamber Orchestra/Ian Bostridge/Lisa Milne size	1
+		Sir Charles Mackerras/Scottish Chamber Orchestra/Ian Bostridge/Lisa Milne/Barbara Frittoli/Anthony Rolfe Johnson size	1
+		Sir Charles Mackerras/Scottish Chamber Orchestra/Ian Bostridge/Paul Charles Clarke size	1
+		Sir Charles Mackerras/Scottish Chamber Orchestra/Ian Bostridge/Lorraine Hunt Lieberson/Lisa Milne/Barbara Frittoli/Paul Charles Clarke size	1
+		Sir Charles Mackerras/Scottish Chamber Orchestra/Edinburgh Festival Chorus/Barbara Frittoli size	1
+		Sir Charles Mackerras/Scottish Chamber Orchestra/Ian Bostridge/Anthony Rolfe Johnson size	1
+		Eftos size	47
+		Alfred Brendel size	19
+		Blanca Uribe size	1
+		Alfred Brendel/Alban Berg Quartett/GÌ_nter Pichler/Gerhard Schulz/Thomas Kakuska/Valentin Erben size	5
+		Alfred Brendel_ Walter Lien size	1
+		Jaime Ades size	3
+		Carmen Piazzini size	1
+		Kate Project size	1
+		Custom Blue size	1
+		Ludovico Einaudi size	89
+		Ludovico Einaudi / Marco Decimo size	3
+		Scottish Chamber Orchestra/Jukka-Pekka Saraste size	4
+		Dr. Jeffrey Thompson size	1
+		Scottish Chamber Orchestra/Roderick Brydon/Paul Tortelier size	1
+		Scottish Chamber Orchestra size	40
+		Scottish Chamber Orchestra/Sir Charles Mackerras size	23
+		Scottish Chamber Orchestra/Alexander Janiczek size	12
+		Scottish Chamber Orchestra/Alison Mitchell/Ursula Leveaux/Maximiliano Martin/Alexander Janiczek size	5
+		Palm size	1
+		Yo-Yo Ma size	32
+		Yo-Yo Ma;Edgar Meyer;Mark O'Connor size	4
+		Yo-Yo Ma;Mark O'Connor size	2
+		Yo-Yo Ma;Emanuel Ax size	14
+		Yo-Yo Ma;Isaac Stern;Jaime Laredo;Emanuel Ax size	5
+		Yo-Yo Ma;Pinchas Zukerman;The Saint Paul Chamber Orchestra size	1
+		Isaac Stern size	1
+		Yo-Yo Ma;Isaac Stern;Michael Tree;Cho-Liang Lin;Jaime Laredo;Sharon Robinson size	4
+		Yo-Yo Ma;Richard Stoltzman;Emanuel Ax size	1
+		Yo-Yo Ma;Pamela Frank;Emanuel Ax size	2
+		Yo-Yo Ma;New York Philharmonic;Kurt Masur size	2
+		Yo-Yo Ma;Tan Dun size	1
+		Yo-Yo Ma;Lorin Maazel size	2
+		Yo-Yo Ma;Jaime Laredo;Leon Fleisher size	1
+		Yo-Yo Ma;Patricia Zander size	5
+		Yo-Yo Ma;Peter Serkin;Peter Lieberson;Emanuel Ax size	4
+		Yo-Yo Ma;Jeffrey Kahane size	1
+		Yo-Yo Ma;Philip Glass Ensemble size	3
+		Yo-Yo Ma;David Zinman;Philadelphia Orchestra size	1
+		Yo-Yo Ma;Sylvia McNair;AndrÌ© Previn size	2
+		Yo-Yo Ma;Pittsburgh Symphony Orchestra;Lorin Maazel size	5
+		Yo-Yo Ma/Charles Dutoit/Orchestre National de France size	1
+		Yo-Yo Ma;Cleveland Quartet size	3
+		Yo-Yo Ma;Isaac Stern;Cho-Liang Lin;Jaime Laredo size	4
+		Yo-Yo Ma;John Williams size	1
+		Yo-Yo Ma;Isaac Stern;Emanuel Ax size	2
+		Yo-Yo Ma;The Silk Road Ensemble size	1
+		Yo-Yo Ma;Amsterdam Baroque Orchestra;Ton Koopman size	3
+		Yo-Yo Ma;Dave Brubeck size	1
+		Yo-Yo Ma;Pikes Peak Ringers size	1
+		Yo-Yo Ma;Paul Winter;Pamela Frank;Sam Waterston;Derrick Inouye size	4
+		Boston Symphony Orchestra;Yo-Yo Ma;Seiji Ozawa size	1
+		Yo-Yo Ma;Edgar Meyer size	1
+		Yo-Yo Ma;Fred Frith size	1
+		Yo-Yo Ma;Kenneth Cooper size	1
+		Czech Philharmonic Chamber Orchestra size	18
+		Czech Philharmonic Chamber Orchestra_ Lucia Matos_ Andrea Gullickson size	6
+		Czech Chamber Philharmonic Orchestra_ Douglas Bostock size	5
+		Czech Philharmonic Orchestra size	9
+		Pierre Boulez size	71
+		Pierre Boulez and Yvonne Loriod size	3
+		Pierre Boulez;Philippe Entremont size	1
+		Pierre Boulez;New York Philharmonic size	1
+		Pierre Boulez;The Cleveland Orchestra size	1
+		Loriod Yvonne_Ensemble Intercontemporain_Olivier Messiaen_Pierre Boulez size	1
+		Pierre Boulez;Philharmonia Chamber Orchestra size	1
+		Bamberg Symphony Orchestra size	1
+		Gambafreaks size	9
+		Gambafreaks ft. Nicole size	17
+		Gambafreaks Feat. Nicole size	15
+		Gambafreaks feat. Paco Rivaz size	2
+		Pierre-Laurent Aimard size	43
+		Suzie LeBlanc/Claron McFadden/Teatro Lirico/Stephen Stubbs size	1
+		Suzie Le Blanc size	8
+		Suzie LeBlanc with Les Voix humaines & Stephen Stubbs size	2
+		Suzie LeBlanc with Les Voix humaines size	5
+		Suzie Leblanc size	23
+		Suzie LeBlanc with Yannick NÌ©zet-SÌ©guin size	4
+		Suzie Leblanc_ Daniel Taylor_ Les voix humaines size	1
+		Suzie Le Blanc/Teatro Lirico/Stephen Stubbs size	5
+		AndrÌÁs Schiff size	57
+		AndrÌÁs Schiff / Miklos Perenyi size	3
+		Thalia Myers size	1
+		AndrÌÁs Schiff_ DÌ©nas VÌÁrjon_ Heinz Holliger & Budapest Festival Orchestra size	2
+		Paul Hindemith/Philharmonia Orchestra size	5
+		Paul Hindemith/Philharmonia Orchestra/Louis Cahuzac size	4
+		Paul Hindemith;New York Philharmonic;Ricky  Bell size	1
+		John Eliot Gardiner size	47
+		Royal Liverpool Philharmonic Orchestra size	7
+		Royal Liverpool Philharmonic Orchestra/Libor Pesek size	12
+		Royal Liverpool Philharmonic Orchestra_ Douglas Bostock size	3
+		Carl Davis size	1
+		Royal Liverpool Philharmonic Orchestra/Barry Wordsworth size	1
+		Royal Liverpool Philharmonic Orchestra/Sir Charles Mackerras size	4
+		David Lloyd-Jones size	2
+		Royal Liverpool Philharmonic Orchestra/Malcolm Stewart/Vernon Handley size	2
+		Ignacy Jan Paderewski size	1
+		Andre Previn size	17
+		Andre Previn_ Joe Pass & Ray Brown size	1
+		AndrÌ© Previn size	9
+		AndrÌ© Previn/Yale String Quartet size	1
+		Andre Previn / London Symphony Orchestra size	2
+		Andru Previn size	1
+		AndrÌ© Previn/London Symphony Orchestra/London Symphony Chorus size	2
+		AndrÌ© Previn/Royal Philharmonic Orchestra size	1
+		AndrÌ© Previn / The London Symphony Orchestra size	4
+		Jascha Heifetz size	27
+		Jascha Heifetz/London Philharmonic Orchestra/Sir John Barbirolli size	2
+		Jascha Heifetz/London Philharmonic Orchestra/Sir Thomas Beecham size	1
+		Jascha Heifetz/Emanuel Bay size	2
+		Jascha Heifetz/Artur Rubinstein size	1
+		W Gibson size	1
+		Jascha Heifetz_ Arthur Rubinstein size	2
+		Myleene Klass size	13
+		Arturo Sandoval / Monica Mancini size	1
+		Marylin Frascone size	1
+		Alarm Will Sound size	20
+		Forbidden size	22
+		Andy Jay Powell size	1
+		MÌ_rtini BrÌ_s size	1
+		Marc-AndrÌ© Hamelin & Steven Sloane & Bochumer Sinfoniker size	4
+		Marc-Andre Hamelin size	4
+		Marc-AndrÌ© Hamelin size	36
+		The Academy of Ancient Music / Paul Goodwin size	6
+		The Academy of Ancient Music / Christopher Hogwood size	2
+		Academy of Ancient Music & Richard Egarr size	6
+		The Academy of Ancient Music / Andrew Manze size	2
+		Heinrich Ignaz Franz von Biber size	42
+		Heinrich Ignaz Franz Biber size	1
+		Glenn Branca size	43
+		Glenn Branca_ Anthony Coleman_ Michael Gross_ F.L. SchrÌ_eder_ Stephan Wischerth size	1
+		Glenn Branca_ Anthony Coleman_ F.L. SchrÌ_eder_ Harry Spitz_ Stephan Wischerth size	1
+		Wim Mertens size	1
+		Vikki Carr size	1
+		Cecilia Bartoli / Orchestra Of The Age Of Enlightenment / Adam Fischer size	6
+		Cecilia Bartoli / Rachel Brown / Anthony Robson / Orchestra Of The Age Of Enlightenment / Adam Fischer size	1
+		Cecilia Bartoli / Andrea Perugi / Orchestra Of The Age Of Enlightenment / Adam Fischer size	4
+		Cecilia Bartoli / Anthony Robson / Andrea Perugi / Orchestra Of The Age Of Enlightenment / Adam Fischer size	1
+		Cecilia Bartoli / Orchestra La Scintilla / Adam Fischer size	9
+		Cecilia Bartoli / International Chamber Soloists / Orchestra La Scintilla / Adam Fischer size	7
+		Cecilia Bartoli / Orchestra del Teatro Comunale di Bologna / Giuseppe PatanÌ¬ size	1
+		Cecilia Bartoli / Il Giardino Armonico / Giovanni Antonini size	12
+		Cecilia Bartoli / Orchestra dell'Accademia Nazionale di Santa Cecilia / Myung-Whun Chung / Cinzia Maurizio size	1
+		Cecilia Bartoli size	1
+		The DEY size	1
+		Nicki Minaj / Sean Garrett size	1
+		DJ Yoda size	28
+		Ornella Vanoni size	1
+		DJ Yoda / MC Paul Barman size	4
+		DJ Yoda / Andy Cooper size	2
+		DJ Yoda / Princess Superstar size	1
+		DJ Yoda / Apathy / Kwest / Celph Titled size	1
+		DJ Yoda / Aspects size	1
+		DJ Yoda / Sway size	1
+		DJ Yoda / Jungle Brothers size	1
+		DJ Yoda / Biz Markie size	1
+		Mr. Dibbs size	4
+		La Banda Del Diablo size	1
+		Panjabi MC size	59
+		Jay-Z / Panjabi MC size	1
+		Panjabi MC / Chamkila size	1
+		Faith SFX size	1
+		King Gordy featuring Banzi_ Proof_ T-Flame_ Young Breed size	1
+		Organized Konfusion size	40
+		Swiss size	24
+		Swiss / Music Kidz size	1
+		Akil size	6
+		Equipto & Akil size	1
+		Akil_ Dj Kim size	1
+		Fashawn size	20
+		Xecutioners;Big Punisher;Kool G. Rap size	1
+		X-ecutioners size	19
+		X-ecutioners featuring Pharoahe Monch_ Xzibit_ Inspectah Deck and Skillz size	1
+		X-ecutioners featuring Kenny Muhammed (The Human Orchestra) size	1
+		X-ecutioners featuring M.O.P. size	1
+		X-ecutioners featuring Tom Tom Club & Biz Markie size	1
+		X-ecutioners Featuring Everlast size	1
+		X-ecutioners featuring Vinroc_ Apollo and Shortkut (Triple Threat) size	2
+		X-ecutioners featuring Large Professor size	1
+		X-ecutioners (featuring Dan The Automator) size	1
+		X-ecutioners / Delano size	1
+		X-Ecutioners featuring Big Pun size	1
+		X-ecutioners featuring Rob Zombie_ Slug from Atmosphere and Josey Scott size	1
+		X-ecutioners featuring Ghostface Killah_ Trife and Black Thought size	1
+		2Mex & Life Rexall size	3
+		2Mex size	17
+		Los Wawanco size	1
+		DJ Babu size	44
+		Ahli Fiqir size	9
+		DJ Krush / Ronny Jordan size	5
+		Anjellee size	1
+		DJ Krush size	15
+		DJ Krush & Toshinori Kondo size	5
+		Control Machete size	3
+		Fort Minor size	14
+		Fort Minor (Featuring Bobo And Styles Of Beyond) size	1
+		Fort Minor (Featuring Celph Titled) size	1
+		Fort Minor (Featuring John Legend) size	2
+		Fort Minor (Featuring Black Thought Of The Roots And Styles Of Beyond) size	1
+		Fort Minor (Featuring Common And Styles Of Beyond) size	1
+		Fort Minor (Featuring Styles Of Beyond) size	2
+		Fort Minor [Featuring Holly Brook And Jonah Matranga] size	1
+		Fort Minor (Featuring Mr. Hahn) size	1
+		Fort Minor (Featuring Kenna_ Jonah Matranga And Styles Of Beyond) size	1
+		Sniper size	64
+		Sniper_ Mister D_ Siete size	1
+		Sniper_ Kasper_ Mister D_ Sleepy Malo size	1
+		Sniper [Feat. Faada Freddy(Daara J)] size	1
+		Dalek size	2
+		Culture size	26
+		Donell Jones size	34
+		Donell Jones featuring Jermaine Dupri size	1
+		Donell Jones;Donnell Jones size	1
+		Donell Jones featuring Bun B size	1
+		Donell Jones Featuring Clipse size	1
+		Chris Clark size	72
+		Boyz II Men size	88
+		Boyz II Men / Michael BublÌ© size	1
+		Boyz II Men / Patti LaBelle size	1
+		Boyz II Men / Shae Jones size	1
+		Boyz II Men / Driver size	1
+		Lionel Richie / Enrique Iglesias size	1
+		Lionel Richie / Akon size	1
+		Lionel Richie / Toots Thielemans size	1
+		Lionel Richie / Diana Ross size	2
+		Triston Palmer size	9
+		Tristan Palmer size	1
+		Ponto De EquilÌ_brio size	11
+		Whitney Houston size	83
+		Whitney Houston feat. Faith Evans and Kelly Price size	2
+		Whitney Houston featuring Faith Evans and Kelly Price size	2
+		Whitney Houston Feat. Dyme size	2
+		Whitney Houston & Deborah Cox size	2
+		Whitney Houston / Bobby Brown size	1
+		Whitney Houston featuring Akon size	1
+		Jean Elan size	1
+		Whitney Houston feat. Missy "Misdemeanor" Elliott size	1
+		Whitney Houston with The Georgia Mass Choir size	2
+		Ultrabeat vs Darren Styles size	1
+		Whitney Houston Featuring Bobby Brown_ Faith Evans_ Johnny Gill_ Monica And Ralph Tresvant size	1
+		Whitney Houston Featuring The Nativity Choir From The Preacher's Wife size	1
+		Lexdinamo size	1
+		Whitney Houston with Jermaine Jackson size	1
+		Whitney Houston with Enrique Iglesias size	1
+		Undisputed Truth size	1
+		Joss Stone And Nadirah "Nadz" Seid featuring additional vocals by Mick Jagger size	1
+		Joss Stone size	77
+		Joss Stone featuring Nas size	1
+		Joss Stone featuring Jamie Hartman size	1
+		Joss Stone featuring Lauryn Hill size	1
+		Daylight Dies size	1
+		Omarion size	31
+		Omarion featuring Da Brat size	1
+		Omarion Feat. Wyclef Jean size	1
+		Omarion;Kat DeLuna size	1
+		Gerald Levert size	91
+		Gerald Levert & Eddie Levert size	1
+		Gerald Levert featuring Kelly Price size	1
+		Gerald Levert feat. Roy Ayers size	1
+		Gerald Levert/Lemicah Levert size	1
+		Gerald Levert/Sean Levert size	1
+		Gerald Levert/Lazy Bone size	1
+		Gerald Levert/Mary J Blige size	1
+		Roy Ayers size	71
+		Roy Ayers / Carl Clay size	6
+		Shambhu & The Punya Crew size	1
+		Roy Ayers and The Soul Society size	1
+		Brenda Holloway size	54
+		T-Pain size	16
+		T-Pain Featuring Lil Wayne size	1
+		T-Pain featuring Ludacris size	2
+		T-Pain featuring Shawnna size	1
+		T-Pain featuring Teddy Verseti size	1
+		T-Pain featuring R. Kelly_ Pimp C (of UGK)_ Too $hort_ MJG (of Eightball & MJG)_ Twista &  Paul Wall size	2
+		T-Pain featuring Chris Brown size	1
+		T-Pain featuring Akon_ Diddy & Mary J. Blige size	1
+		The Jacksons size	87
+		Jacksons size	1
+		Beenie Man Featuring Steve Perry Of The Cherry Poppin' Daddies size	1
+		Beenie Man size	104
+		Beenie Man Featuring Tanto Metro And Devonte size	1
+		Beenie Man Featuring Wyclef size	1
+		Beenie Man featuring Ms. Thing size	2
+		Beenie Man Featuring Ghost size	1
+		Beenie Man (feat. Determine) size	1
+		Terro 3000 size	1
+		Beenie Man Featuring Janet Jackson size	2
+		Beenie Man featuring Lady Saw & Sean Paul size	1
+		Beenie Man featuring Akon size	2
+		Beenie Man Featuring Wyclef And Redman size	1
+		Beenie Man (feat. Da Bush Babees) size	1
+		Beenie Man/Gammy size	1
+		Use Artist # 1431 size	1
+		Harry Toddler size	1
+		Beenie Man & Triston Palmer size	1
+		Beenie Man & Anthony Red Roze size	1
+		Beenie Man featuring Voltio & Randy size	1
+		Buju Banton size	109
+		Buju Banton Feat. Toots Hibbert Of Toots And The Maytals size	1
+		Buju Banton Feat. Tony Rebel size	1
+		Buju Banton Feat. Wayne Wonder size	3
+		Buju Banton Feat. Stephen Marley size	1
+		Buju Banton Feat. Fundisha size	1
+		Buju Banton Feat. Gregory Isaacs size	1
+		Buju Banton Feat. Beres Hammond size	1
+		Buju Banton Feat. Tenor Saw size	1
+		Buju Banton Feat. Culture size	1
+		Buju Banton Feat. Twiggy size	1
+		Buju Banton Feat. Marcia Griffiths size	2
+		Buju Banton Feat.  Nadine Sutherland size	1
+		Buju Banton Feat. Leroy Sibbles size	1
+		Buju Banton (feat. Sons And Daughters Choir) size	1
+		Buju Banton (feat. Bounty Killer) size	1
+		Garnett Silk size	1
+		Buju Banton / Cam'Ron size	1
+		Buju Banton Feat. Ras Shiloh size	1
+		Buju Banton Feat. Toots Hibbert size	1
+		Buju Banton (feat. Morgan Heritage) size	1
+		Buju Banton (feat. Nadine Sutherland) size	2
+		Reggae Gold 2003 size	1
+		Buju Banton_ Major Damage_ Benzino size	1
+		Collie Buddz size	8
+		Collie Buddz featuring Roache size	1
+		Collie Buddz featuring Krayzie Bone size	1
+		Collie Buddz featuring Yung Berg size	1
+		Collie Buddz featuring Young Buck and Tony Yayo size	1
+		Collie Buddz featuring Paul Wall size	1
+		David Bowie size	1
+		Dinka size	1
+		The Gladiators size	28
+		Sound Dimension size	1
+		The Session size	1
+		Natty King size	47
+		Natty King & Al Pancho size	1
+		Leroy Smart size	1
+		Natty King feat. Daddy Rings size	1
+		Kid Sister size	23
+		Little Beaver size	45
+		Plies size	67
+		Plies feat. Akon size	1
+		Plies featuring 40rty size	1
+		Plies featuring Akon size	2
+		Plies Featuring T Pain size	2
+		Plies featuring Tank size	2
+		Black Uhuru size	124
+		Black Uhuru ft. Micheal Roze size	1
+		Black Uhuru ft. Andrew Bees & Ice T size	1
+		Jenna G size	1
+		Sizzla size	108
+		Sizzla & Leego size	1
+		Black History size	2
+		Sizzla Kalonji size	1
+		Sizzla Feat. Jah Cure size	2
+		Soulive / Reggie Watts size	1
+		Soulive / Cochema Gastelum size	1
+		Soulive / Ivan Neville size	1
+		Soulive size	57
+		Soulive Featuring Black Thought size	1
+		Soulive Featuring Talib Kweli size	1
+		The New Mastersounds size	50
+		New Mastersounds size	2
+		Steven Perri & Zamaun size	1
+		Linton Kwesi Johnson size	23
+		Al Green size	75
+		LYLE LOVETT And AL GREEN size	1
+		Great Gospel Moments size	1
+		Al Green / Joss Stone size	1
+		Bettye Lavette size	41
+		Solomon Burke size	76
+		Enur size	11
+		ENUR Feat NATASJA size	1
+		Enur Feat. Natasja size	1
+		Terri Walker size	20
+		Terri Walker / Mos Def size	1
+		Terri Walker / The Wise Children Band size	1
+		Terri Walker / Sway size	1
+		Tripple Sec size	1
+		The Quantic Soul Orchestra size	30
+		Quantic Soul Orchestra size	1
+		Joe Budden size	27
+		Joe Budden / Lil' Mo size	2
+		Joe Budden / Nate Dogg size	1
+		Joe Budden / Tanto Metro & Devonte size	1
+		Joe Budden / 112 size	1
+		Karaoke (Made famous by Joe Budden) size	2
+		Geda size	1
+		Tom Baxter size	41
+		Benga size	37
+		Benga & Coki size	6
+		Prince Fatty size	13
+		Rod Taylor size	46
+		Yellowman size	61
+		Yellow Man size	1
+		Yellowman Feat. Fathead size	7
+		Yellowman/The Paragons size	4
+		Sly & The Family Stone size	113
+		Sly And The Family Stone size	2
+		Sly Stone size	2
+		Amp Fiddler Feat. Neco Washington size	1
+		Amp Fiddler size	33
+		Amp Fiddler Feat. Stephanie McKay size	1
+		Amp Fiddler - Remix by Blacksmith size	1
+		Amp Fiddler - Remix by Ali Shaheed Muhammed size	1
+		Amp Fiddler & Jaylib size	1
+		Amp Fiddler & Bugz In The Attic size	1
+		Amp Fiddler Feat. Corinne Bailey Rae size	4
+		Fat Freddys Drop size	15
+		Fat Freddy's Drop size	31
+		The Heptones size	47
+		The Heptones (feat. U-Roy) size	1
+		Nu:Tone size	44
+		Nu:Tone feat. Natalie Williams size	3
+		Nu:Tone ft. Logistics size	2
+		Lauryn Hill size	39
+		Lauryn Hill Featuring Mary J. Blige size	1
+		Lauryn Hill Featuring D'Angelo size	1
+		Lauryn Hill Featuring Carlos Santana size	1
+		Belleruche size	33
+		Adrian Sherwood size	19
+		Stephen Marley size	13
+		Stephen Marley / Mos Def size	1
+		Stephen Marley / Damian Marley size	3
+		Stephen Marley / Ben Harper size	1
+		Stephen Marley / Julian Marley / Mr. Cheeks / Spragga Benz size	1
+		Stephen Marley / Maya Azucena / Illestr8 size	1
+		Stephen Marley / Julian Marley / Spragga Benz size	1
+		Stephen Marley & Damian ""Jr. Gong"" Marley size	1
+		Joe Higgs size	36
+		Jackie Mittoo size	48
+		Tubby's size	1
+		Jackie Mittoo_ Winston Wright size	1
+		Jackie Mittoo_ Bagga Walker_ Pablove Black and Devon Russell size	1
+		Jackie Mittoo_ Aggrovators size	2
+		Angie Stone size	71
+		Angie Stone / Betty Wright size	2
+		Angie Stone / Diamond Stone size	1
+		Angie Stone / Young Nate size	1
+		Angie Stone feat. Musiq Soulchild size	1
+		Angie Stone feat. Calvin size	1
+		Chris Ingham size	1
+		Angie Stone featuring Floetry size	1
+		Angie Stone featuring T.H.C. size	1
+		Angie Stone featuring Diamond Stone size	1
+		Angie Stone featuring Anthony Hamilton size	1
+		Angie Stone / Pauletta Washington size	1
+		Angie Stone / James Ingram size	1
+		Angie Stone and Eddie Levert_ Sr.(of The O'Jays) size	1
+		Luciano size	40
+		Beenie Man & Luciano size	1
+		Luciano /Various Artists size	2
+		Luciano & Silvana Blue size	2
+		Luciano (DJ) size	1
+		U. Brown size	20
+		U Brown size	22
+		Revolutionaries size	1
+		U-Brown size	2
+		U. Brown / Linval Thompson size	1
+		Chezidek size	54
+		Chezid Ek size	2
+		Chezidek feat. Gentleman size	1
+		Chezidek feat. Prezident Brown size	1
+		Tweet size	33
+		Tweet/Bilal size	1
+		Tweet feat. Missy Elliott size	2
+		SkinnyMan size	18
+		Skinny Man / Deadly Hunta size	1
+		Rodney P_Farma G_Mystro_Braintax size	1
+		Macy Gray size	66
+		Macy Gray / Fergie size	1
+		Macy Gray / Romika size	1
+		Macy Gray / Natalie Cole size	1
+		Macy Gray / Justin Timberlake size	1
+		Macy Gray / Will.I.Am size	1
+		Macy Gray / Mos Def size	1
+		Macy Gray featuring Slick Rick size	1
+		Macy Gray featuring Erykah Badu size	1
+		Macy Gray featuring Mos Def size	1
+		Macy Gray featuring Sunshine Anderson size	1
+		Macy Gray featuring Angie Stone and Mos Def size	1
+		Sam Cooke size	56
+		Rosendo size	1
+		Sam Cooke & The Soul Stirrers size	2
+		The Soul Stirrers size	3
+		Sam Cooke / The Soul Stirrers size	1
+		Johnny Lover size	1
+		Bob Marley size	62
+		Bob Marley & The Wailers size	97
+		Bob Marley_The Wailers size	3
+		Peter Tosh size	1
+		Peter Tosh / The Wailers size	2
+		Bob Marley & Lee "Scratch" Perry size	1
+		Bob Marley / Lost Boyz / Mr.Cheeks size	1
+		Bob Marley & The Wailers / Lee "Scratch" Perry size	1
+		Rita Marley / The Wailers size	1
+		BOB MARLEY AND THE WAILERS size	8
+		Bob Marley / The Wailers size	1
+		The Wailers size	2
+		Carl Dawkins / Bob Marley & The Wailers size	1
+		Steel Pulse size	101
+		Steel Pulse feat. Capleton size	1
+		Polly Famous size	1
+		Steel Pulse feat. Damian Marley size	1
+		Ayo size	74
+		Valerie Simpson size	21
+		Ashford & Simpson size	87
+		Wilson Pickett size	130
+		Wilson Pickett / Duane Allman size	1
+		DJINXX size	1
+		The Skatalites size	49
+		Don Drummond size	2
+		Tommy McCook / The Skatalites size	1
+		The Skatalites / Baba Brooks size	1
+		Tommy McCook size	1
+		Glen Brown size	4
+		Sylford Walker size	1
+		Glen Brown / King Tubby size	9
+		Glen Brown / Joe White size	1
+		Glen Brown / Wayne Jarrett size	1
+		Glen Brown (Melodica) size	1
+		Hil Street Soul size	7
+		Hil St. Soul size	2
+		Hil St Soul size	29
+		Misty In Roots size	11
+		Erykah Badu size	35
+		Erikah size	1
+		Erykah Badu / Dead Prez size	1
+Requested artist name "T-Pain featuring Ludacris" found
+Requested artist name "Bob Marley & The Wailers" found
+Requested artist name "Whitney Houston Featuring Bobby Brown_ Faith Evans_ Johnny Gill_ Monica And Ralph Tresvant" found
+Requested artist name "The Ruby Suns feat. The Penan" not found
+Requested artist name "WC / Snoop Dogg / Nate Dogg" found
+Requested artist name "Boyz I Men" not found
+Requested artist name "Jay-z" not found
+Requested artist name "blue Oyster Cult" not found
+Requested artist name "Ani DiFranco" not found
+Requested artist name "Nadine Sutherland" not found
+Done with testing table of artists.
+
+Done with MyTunes.
+
+Process finished with exit code 0
