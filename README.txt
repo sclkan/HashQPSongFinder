@@ -68,3 +68,31 @@ resources/RUN.txt
 
 README.txt
     - Description of submitted files
+
+Discussion:
+
+Whenever .insert() is called, the program will probe for an element while adding a new key to the table.
+The insert method is used by the client when it calls populateTitleTable(allSongs) and populateArtistTable(allSongs)
+in the MyTunes constructor.
+
+Given an initial table size of 10, the actual initial table size used is 11.
+When we initialize our table,  the nextPrime method is called because our input is greater than 7 (INIT_TABLE_SIZE).
+11 is the first prime number after 10.
+
+I have also run a series of tests to examine how initial table size affects the number of quadratic probes.
+When the initial table size is 3:
+For the Title hash table, the number of quadratic probes performed is 15
+For the Artist hash table, the number of quadratic probes performed is 1
+
+When the initial table size is 30:
+For the Title hash table, the number of quadratic probes performed is 6
+For the Artist hash table, the number of quadratic probes performed is 1
+
+
+When the initial table size is 1000000:
+For the Title hash table, the number of quadratic probes performed is 5
+For the Artist hash table, the number of quadratic probes performed is 0
+
+Based on the data above, increasing the table size tends to decrease the number of quadratic probes performed.
+Therefore, these two variables seem to be negatively correlated.
+This makes sense because the larger the table, the less clustering and fewer chances that two objects will cl
