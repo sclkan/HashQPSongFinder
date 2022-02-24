@@ -94,4 +94,4 @@ For the Artist hash table, the number of quadratic probes performed is 0
 
 Based on the data above, increasing the table size tends to decrease the number of quadratic probes performed.
 Therefore, these two variables seem to be negatively correlated.
-This makes sense because the larger the table, the less clustering and fewer chances that two objects will clash.
+This makes sense because the larger the table, the less clustering and fewer chances that the objects will clash.
