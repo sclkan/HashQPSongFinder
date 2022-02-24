@@ -88,11 +88,10 @@ When the initial table size is 30:
 For the Title hash table, the number of quadratic probes performed is 6
 For the Artist hash table, the number of quadratic probes performed is 1
 
-
 When the initial table size is 1000000:
 For the Title hash table, the number of quadratic probes performed is 5
 For the Artist hash table, the number of quadratic probes performed is 0
 
 Based on the data above, increasing the table size tends to decrease the number of quadratic probes performed.
 Therefore, these two variables seem to be negatively correlated.
-This makes sense because the larger the table, the less clustering and fewer chances that two objects will cl
+This makes sense because the larger the table, the less clustering and fewer chances that two objects will clash.
