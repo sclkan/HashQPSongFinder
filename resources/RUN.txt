@@ -3710,7 +3710,7 @@ Number of store songs given an artist:
 Requested artist name "T-Pain featuring Ludacris" found
 Requested artist name "Bob Marley & The Wailers" found
 Requested artist name "Whitney Houston Featuring Bobby Brown_ Faith Evans_ Johnny Gill_ Monica And Ralph Tresvant" found
-Requested artist name "The Ruby Suns feat. The Penan" not found
+Requested artist name "The Ruby Suns feat. The Penan tribe" found
 Requested artist name "WC / Snoop Dogg / Nate Dogg" found
 Requested artist name "Boyz I Men" not found
 Requested artist name "Jay-z" not found
